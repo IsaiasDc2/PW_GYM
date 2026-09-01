@@ -52,17 +52,19 @@ Home
 
 ```
 PW_GYM/
-├── README.md                   
+├── README.md
+├── index.html
+├── index.css
+├── AUDITORIA.md          
 ├── bocetos/
-│   ├── boceto_home.jpg
-│   ├── boceto_planes.jpg
-│   └── ... (una foto por sección o por hoja usada)
-├── mapa-del-sitio/
-│   └── mapa_del_sitio.jpg
-└── figma/
-    └── wireframe_home.png
+│    └──Foto             
+├── figma/
+│    └──Fotos                
+├── mapa_del_sitio/       
+├── css/  
+│    └──index.css
+├── img/  
+└── js/   
 ```
 
-## Nota
 
-El tema (gimnasio) queda fijo para todo el año. Cualquier modificación que surja se actualiza acá y en toda la documentación relacionada.
