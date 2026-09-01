@@ -55,7 +55,7 @@ PW_GYM/
 ├── README.md
 ├── index.html
 ├── index.css
-├── AUDITORIA.md          
+├── documentacion.md          
 ├── bocetos/
 │    └──Foto             
 ├── figma/
