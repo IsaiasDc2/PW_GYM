@@ -6,70 +6,103 @@ body,
 }
 
 @theme inline {
-  --font-display: 'Anton', sans-serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
 }
 
 :root {
-  --acid: #C8FF00;
+  --acid: #c8ff00;
   --acid-dim: #9fcc00;
   --black: #080808;
   --surface: #111111;
   --surface2: #181818;
   --border: #252525;
   --muted: #888888;
-  --text: #F0F0F0;
-  --text-dim: #AAAAAA;
+  --text: #f0f0f0;
+  --text-dim: #aaaaaa;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: var(--black);
   color: var(--text);
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: "DM Sans", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 3px; }
-::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--border); }
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
 
 /* Anton display utility */
-.display { font-family: 'Anton', sans-serif; letter-spacing: 0.01em; }
+.display {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 0.01em;
+}
 
 /* Acid accent */
-.acid { color: var(--acid); }
+.acid {
+  color: var(--acid);
+}
 
 /* Section utility */
-.section-pad { padding: 80px 24px; }
+.section-pad {
+  padding: 80px 24px;
+}
 
 @media (min-width: 768px) {
-  .section-pad { padding: 100px 48px; }
+  .section-pad {
+    padding: 100px 48px;
+  }
 }
 
 /* Marquee */
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .marquee-track {
   display: flex;
   animation: marquee 20s linear infinite;
   width: max-content;
 }
-.marquee-track:hover { animation-play-state: paused; }
+.marquee-track:hover {
+  animation-play-state: paused;
+}
 
 /* Fade-up entry (CSS only, no JS needed) */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Card hover */
 .card-hover {
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
 }
 .card-hover:hover {
   transform: translateY(-4px);
@@ -95,35 +128,47 @@ body {
 
 /* Progress bar animation */
 @keyframes grow {
-  from { width: 0; }
-  to { width: var(--target); }
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--target);
+  }
 }
 
 /* Image tint overlay */
 .img-tint::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(8,8,8,0.7) 0%, rgba(8,8,8,0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(8, 8, 8, 0.7) 0%,
+    rgba(8, 8, 8, 0.2) 100%
+  );
   pointer-events: none;
 }
 
 /* Tab active */
-.tab-btn { transition: all 0.2s; }
+.tab-btn {
+  transition: all 0.2s;
+}
 .tab-btn.active {
   background: var(--acid) !important;
   color: var(--black) !important;
 }
 
 /* Focus states */
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: 1.5px solid var(--acid);
   border-color: var(--acid) !important;
 }
 
 /* Noise texture overlay */
 .noise::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   opacity: 0.03;

@@ -52,13 +52,19 @@ https://www.figma.com/make/ra0LV4WcUW1xd2dN0y07hx/Wireframe-landing-page-gimnasi
 
 ```
 PW_GYM/
-├── README.md                   
+├── README.md
+├── index.html
+├── index.css
+├── AUDITORIA.md          
 ├── bocetos/
-│   ├── boceto_home.jpg
-├── mapa-del-sitio/
-│   └── mapa_del_sitio.jpg
-└── figma/
-    └── wireframe_home.png
+│    └──Foto             
+├── figma/
+│    └──Fotos                
+├── mapa_del_sitio/       
+├── css/  
+│    └──index.css
+├── img/  
+└── js/   
 ```
 
 
