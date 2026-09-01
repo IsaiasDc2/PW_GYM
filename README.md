@@ -46,7 +46,7 @@ Home
 
 ## 6. Wireframe en Figma
 
-
+https://www.figma.com/make/ra0LV4WcUW1xd2dN0y07hx/Wireframe-landing-page-gimnasio?t=Rgvp9jP1PosN34rL-20&fullscreen=1&preview-route=%2F%23contacto
 
 ## Estructura del repositorio
 
