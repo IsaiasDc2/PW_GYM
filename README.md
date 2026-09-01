@@ -1,10 +1,10 @@
 # TP N°3 - Sitio Web de un Gimnasio 🏋️
 
-Repositorio del Trabajo Práctico N°3 de la materia. Acá está toda la documentación del proceso de diseño de un sitio web para un gimnasio: desde la elección del tema hasta el mapa del sitio.
+Acá está toda la documentación del proceso de diseño de un sitio web para un gimnasio: desde la elección del tema hasta el mapa del sitio.
 
 ## 1. Intereses personales
 
-Entre mis intereses personales se destacan la actividad física y el entrenamiento de fuerza, que forman parte de mi rutina y de cómo me gusta cuidar mi cuerpo. También me interesa todo lo relacionado con la nutrición y los hábitos saludables, ya que entiendo que el ejercicio y la alimentación van de la mano a la hora de lograr resultados y bienestar. Por otro lado, me atrae la tecnología aplicada al deporte, como los wearables y las aplicaciones de seguimiento, que hoy permiten medir el rendimiento, controlar el progreso y tomar decisiones más informadas sobre el entrenamiento. Finalmente, valoro mucho la comunidad y la motivación grupal, porque considero que entrenar acompañado o formar parte de un grupo con objetivos similares ayuda a sostener la constancia en el tiempo.
+Entre mis intereses personales se destacan la actividad física y el entrenamiento de fuerza, que forman parte de mi rutina. También me interesa todo lo relacionado con la nutrición y los hábitos saludables, ya que entiendo que el ejercicio y la alimentación van de la mano a la hora de lograr resultados y bienestar. Por otro lado, me atrae la tecnología aplicada al deporte, como los wearables y las aplicaciones de seguimiento, que hoy permiten medir el rendimiento, controlar el progreso y tomar decisiones más informadas sobre el entrenamiento. Finalmente, valoro mucho la comunidad y la motivación grupal, porque considero que entrenar acompañado o formar parte de un grupo con objetivos similares ayuda a sostener la constancia en el tiempo.
 
 ## 2. Tema del sitio web
 
@@ -55,14 +55,10 @@ PW_GYM/
 ├── README.md                   
 ├── bocetos/
 │   ├── boceto_home.jpg
-│   ├── boceto_planes.jpg
-│   └── ... (una foto por sección o por hoja usada)
 ├── mapa-del-sitio/
 │   └── mapa_del_sitio.jpg
 └── figma/
     └── wireframe_home.png
 ```
 
-## Nota
 
-El tema (gimnasio) queda fijo para todo el año. Cualquier modificación que surja se actualiza acá y en toda la documentación relacionada.
