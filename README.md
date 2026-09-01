@@ -64,7 +64,10 @@ https://www.figma.com/make/ra0LV4WcUW1xd2dN0y07hx/Wireframe-landing-page-gimnasi
 ---
 ![imagen8](https://github.com/IsaiasDc2/PW_GYM/blob/aef7e847d9e194632f6e40408bdaac10f6e05001/figma/Captura%20de%20pantalla%202026-09-01%20171644.png)
 ---
-![imagen9]()
+![imagen9](https://github.com/IsaiasDc2/PW_GYM/blob/75a2709ffcc4f16cb9457b06f5302bf088f80ede/figma/Captura%20de%20pantalla%202026-09-01%20171651.png)
+---
+![imagen10]()
+---
 ## Estructura del repositorio
 
 ```
