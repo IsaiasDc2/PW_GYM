@@ -1,10 +1,10 @@
 # TP N°3 - Sitio Web de un Gimnasio 🏋️
 
-Repositorio del Trabajo Práctico N°3 de la materia. Acá está toda la documentación del proceso de diseño de un sitio web para un gimnasio: desde la elección del tema hasta el mapa del sitio.
+Acá está toda la documentación del proceso de diseño de un sitio web para un gimnasio: desde la elección del tema hasta el mapa del sitio.
 
 ## 1. Intereses personales
 
-Entre mis intereses personales se destacan la actividad física y el entrenamiento de fuerza, que forman parte de mi rutina y de cómo me gusta cuidar mi cuerpo. También me interesa todo lo relacionado con la nutrición y los hábitos saludables, ya que entiendo que el ejercicio y la alimentación van de la mano a la hora de lograr resultados y bienestar. Por otro lado, me atrae la tecnología aplicada al deporte, como los wearables y las aplicaciones de seguimiento, que hoy permiten medir el rendimiento, controlar el progreso y tomar decisiones más informadas sobre el entrenamiento. Finalmente, valoro mucho la comunidad y la motivación grupal, porque considero que entrenar acompañado o formar parte de un grupo con objetivos similares ayuda a sostener la constancia en el tiempo.
+Entre mis intereses personales se destacan la actividad física y el entrenamiento de fuerza, que forman parte de mi rutina. También me interesa todo lo relacionado con la nutrición y los hábitos saludables, ya que entiendo que el ejercicio y la alimentación van de la mano a la hora de lograr resultados y bienestar. Por otro lado, me atrae la tecnología aplicada al deporte, como los wearables y las aplicaciones de seguimiento, que hoy permiten medir el rendimiento, controlar el progreso y tomar decisiones más informadas sobre el entrenamiento. Finalmente, valoro mucho la comunidad y la motivación grupal, porque considero que entrenar acompañado o formar parte de un grupo con objetivos similares ayuda a sostener la constancia en el tiempo.
 
 ## 2. Tema del sitio web
 
@@ -46,7 +46,7 @@ Home
 
 ## 6. Wireframe en Figma
 
-
+https://www.figma.com/make/ra0LV4WcUW1xd2dN0y07hx/Wireframe-landing-page-gimnasio?t=Rgvp9jP1PosN34rL-20&fullscreen=1&preview-route=%2F%23contacto
 
 ## Estructura del repositorio
 
