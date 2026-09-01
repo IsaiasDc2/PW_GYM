@@ -1,0 +1,4898 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forja Gym</title>
+    <meta
+      name="description"
+      content="Forja Gym: entrenamiento de élite, nutrición personalizada y tecnología para tu progreso. Conocé nuestros planes, clases y sedes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <style>
+      .mobile-menu.open {
+        display: block !important;
+      }
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+        background: var(--acid);
+        color: var(--black);
+        padding: 12px 20px;
+        z-index: 1000;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .skip-link:focus {
+        left: 16px;
+        top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#contenido-principal" class="skip-link"
+      >Saltar al contenido principal</a
+    >
+    <div id="root">
+      <div style="min-height: 100%">
+        <header
+          style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: transparent;
+            backdrop-filter: none;
+            border-bottom: none;
+            transition: all 0.3s;
+          "
+        >
+          <div style="max-width: 1100px; margin: 0 auto; padding: 0 24px">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 64px;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div
+                  style="
+                    width: 34px;
+                    height: 34px;
+                    background: var(--acid);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect
+                      x="2"
+                      y="7"
+                      width="14"
+                      height="4"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                    <rect
+                      x="0"
+                      y="5"
+                      width="3"
+                      height="8"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                    <rect
+                      x="15"
+                      y="5"
+                      width="3"
+                      height="8"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                  </svg>
+                </div>
+                <span
+                  class="display"
+                  style="
+                    font-size: 22px;
+                    color: var(--text);
+                    letter-spacing: 0.05em;
+                  "
+                  >FORJA<span style="color: var(--acid)">.</span></span
+                >
+              </div>
+              <nav
+                style="display: flex; gap: 32px; align-items: center"
+                class="desktop-nav"
+              >
+                <a
+                  href="#nosotros"
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                  "
+                  >Nosotros</a
+                ><a
+                  href="#planes"
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                  "
+                  >Planes</a
+                ><a
+                  href="#clases"
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                  "
+                  >Clases</a
+                ><a
+                  href="#sedes"
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                  "
+                  >Sedes</a
+                ><a
+                  href="#contacto"
+                  style="
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: var(--text-dim);
+                    text-decoration: none;
+                    transition: color 0.2s;
+                  "
+                  >Contacto</a
+                ><button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:10px 20px;border-radius:2px;transition:all 0.2s;background:var(--acid);color:var(--black)"
+                >
+                  Empezá hoy
+                </button>
+              </nav>
+              <button
+                type="button"
+                style="
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 5px;
+                  padding: 4px;
+                "
+                class="hamburger"
+              >
+                <div
+                  style="
+                    width: 24px;
+                    height: 1.5px;
+                    background: var(--text);
+                    border-radius: 1px;
+                    transform: none;
+                    opacity: 1;
+                    transition: all 0.2s;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 24px;
+                    height: 1.5px;
+                    background: var(--text);
+                    border-radius: 1px;
+                    transform: none;
+                    opacity: 1;
+                    transition: all 0.2s;
+                  "
+                ></div>
+                <div
+                  style="
+                    width: 24px;
+                    height: 1.5px;
+                    background: var(--text);
+                    border-radius: 1px;
+                    transform: none;
+                    opacity: 1;
+                    transition: all 0.2s;
+                  "
+                ></div>
+              </button>
+            </div>
+          </div>
+          <style>
+            .desktop-nav {
+              display: none !important;
+            }
+            @media (min-width: 768px) {
+              .desktop-nav {
+                display: flex !important;
+              }
+              .hamburger {
+                display: none !important;
+              }
+            }
+          </style>
+          <div
+            class="mobile-menu"
+            style="
+              display: none;
+              background: var(--surface);
+              border-top: 1px solid var(--border);
+              padding: 20px 24px;
+            "
+          >
+            <a
+              href="#nosotros"
+              style="
+                display: block;
+                padding: 14px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text-dim);
+                text-decoration: none;
+              "
+              >Nosotros</a
+            >
+            <a
+              href="#planes"
+              style="
+                display: block;
+                padding: 14px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text-dim);
+                text-decoration: none;
+              "
+              >Planes</a
+            >
+            <a
+              href="#clases"
+              style="
+                display: block;
+                padding: 14px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text-dim);
+                text-decoration: none;
+              "
+              >Clases</a
+            >
+            <a
+              href="#sedes"
+              style="
+                display: block;
+                padding: 14px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text-dim);
+                text-decoration: none;
+              "
+              >Sedes</a
+            >
+            <a
+              href="#contacto"
+              style="
+                display: block;
+                padding: 14px 0;
+                border-bottom: 1px solid var(--border);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--text-dim);
+                text-decoration: none;
+              "
+              >Contacto</a
+            >
+            <div style="margin-top: 20px">
+              <button
+                type="button"
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 8px;
+                  font-family: &quot;Anton&quot;, sans-serif;
+                  font-size: 14px;
+                  letter-spacing: 0.08em;
+                  text-transform: uppercase;
+                  border: none;
+                  cursor: pointer;
+                  padding: 14px 28px;
+                  border-radius: 2px;
+                  background: var(--acid);
+                  color: var(--black);
+                "
+              >
+                Empezá hoy
+              </button>
+            </div>
+          </div>
+        </header>
+        <section
+          id="contenido-principal"
+          style="
+            position: relative;
+            min-height: 100svh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              background-image: url(https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1600&amp;h=1100&amp;fit=crop&amp;auto=format&amp;q=80);
+              background-size: cover;
+              background-position: center top;
+              filter: brightness(0.35);
+            "
+          ></div>
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 45%;
+              height: 100%;
+              background: var(--acid);
+              clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+              opacity: 0.07;
+            "
+          ></div>
+          <div
+            style="
+              position: relative;
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              padding: 120px 24px 60px;
+              max-width: 1100px;
+              margin: 0 auto;
+              width: 100%;
+            "
+          >
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >El gimnasio que te transforma</span
+            >
+            <h1
+              class="display"
+              style="
+                font-size: clamp(56px, 14vw, 130px);
+                line-height: 0.92;
+                color: var(--text);
+                margin-bottom: 12px;
+              "
+            >
+              FORJÁ<br />TU<br /><span
+                style="color: var(--acid); -webkit-text-stroke: 2px var(--acid)"
+                >MEJOR</span
+              ><br />VERSIÓN
+            </h1>
+            <p
+              style="
+                font-size: 16px;
+                line-height: 1.6;
+                color: var(--text-dim);
+                max-width: 420px;
+                margin-top: 24px;
+                margin-bottom: 36px;
+              "
+            >
+              Más de 15 años construyendo atletas. Entrenamiento de élite,
+              nutrición personalizada y tecnología al servicio de tu progreso.
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap">
+              <button
+                type="button"
+                style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:var(--acid);color:var(--black)"
+              >
+                Empezá hoy →</button
+              ><button
+                type="button"
+                style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--border);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:transparent;color:var(--text)"
+              >
+                Ver planes
+              </button>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 32px;
+                margin-top: 64px;
+                flex-wrap: wrap;
+                border-top: 1px solid var(--border);
+                padding-top: 28px;
+              "
+            >
+              <div>
+                <div
+                  class="display"
+                  style="font-size: 36px; color: var(--acid); line-height: 1"
+                >
+                  2.400+
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    color: var(--muted);
+                    margin-top: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  Socios activos
+                </div>
+              </div>
+              <div>
+                <div
+                  class="display"
+                  style="font-size: 36px; color: var(--acid); line-height: 1"
+                >
+                  3
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    color: var(--muted);
+                    margin-top: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  Sedes
+                </div>
+              </div>
+              <div>
+                <div
+                  class="display"
+                  style="font-size: 36px; color: var(--acid); line-height: 1"
+                >
+                  15
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    color: var(--muted);
+                    margin-top: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  Años de experiencia
+                </div>
+              </div>
+              <div>
+                <div
+                  class="display"
+                  style="font-size: 36px; color: var(--acid); line-height: 1"
+                >
+                  40+
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    color: var(--muted);
+                    margin-top: 4px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  Instructores
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              position: absolute;
+              bottom: 28px;
+              left: 50%;
+              transform: translateX(-50%);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 6px;
+            "
+          >
+            <div
+              style="
+                font-size: 9px;
+                color: var(--muted);
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+              "
+            >
+              Scroll
+            </div>
+            <div
+              style="
+                width: 1px;
+                height: 40px;
+                background: linear-gradient(
+                  to bottom,
+                  var(--muted),
+                  transparent
+                );
+              "
+            ></div>
+          </div>
+        </section>
+        <div
+          style="
+            background: var(--acid);
+            overflow: hidden;
+            padding: 14px 0;
+            border-top: none;
+            border-bottom: none;
+          "
+        >
+          <div class="marquee-track" aria-hidden="true">
+            <span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Funcional <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >CrossFit <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Spinning <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Boxing <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Yoga <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Pilates <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >HIIT <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Musculación <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Funcional <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >CrossFit <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Spinning <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Boxing <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Yoga <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Pilates <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >HIIT <span style="opacity: 0.4">✦</span></span
+            ><span
+              class="display"
+              style="
+                font-size: 20px;
+                color: var(--black);
+                white-space: nowrap;
+                padding: 0 32px;
+              "
+              >Musculación <span style="opacity: 0.4">✦</span></span
+            >
+          </div>
+        </div>
+        <section
+          id="nosotros"
+          class="section-pad"
+          style="background: var(--black)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 48px;
+                align-items: center;
+              "
+              class="about-grid"
+            >
+              <div>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: var(--acid);
+                    margin-bottom: 16px;
+                  "
+                  ><span
+                    style="
+                      width: 24px;
+                      height: 1.5px;
+                      background: var(--acid);
+                      display: inline-block;
+                    "
+                  ></span
+                  >Sobre Nosotros</span
+                >
+                <h2
+                  class="display"
+                  style="
+                    font-size: clamp(40px, 8vw, 72px);
+                    line-height: 0.95;
+                    margin-bottom: 24px;
+                  "
+                >
+                  NO SOMOS<br />UN GIMNASIO<br /><span
+                    style="color: var(--acid)"
+                    >MÁS.</span
+                  >
+                </h2>
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: var(--text-dim);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Fundado en 2009, Forja nació con una misión clara: romper las
+                  barreras entre el fitness de élite y el acceso real. No
+                  prometemos milagros — entregamos resultados medibles, mes a
+                  mes.
+                </p>
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: var(--text-dim);
+                    margin-bottom: 32px;
+                  "
+                >
+                  Cada instructor tiene certificación internacional y
+                  experiencia en competencia. Cada plan está diseñado en función
+                  de tu cuerpo, tu objetivo y tu tiempo.
+                </p>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                    margin-bottom: 36px;
+                  "
+                >
+                  <div style="display: flex; align-items: center; gap: 10px">
+                    <div
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                        flex-shrink: 0;
+                      "
+                    ></div>
+                    <span
+                      style="
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: var(--text-dim);
+                      "
+                      >Disciplina real</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px">
+                    <div
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                        flex-shrink: 0;
+                      "
+                    ></div>
+                    <span
+                      style="
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: var(--text-dim);
+                      "
+                      >Sin excusas</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px">
+                    <div
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                        flex-shrink: 0;
+                      "
+                    ></div>
+                    <span
+                      style="
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: var(--text-dim);
+                      "
+                      >Comunidad sólida</span
+                    >
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 10px">
+                    <div
+                      style="
+                        width: 6px;
+                        height: 6px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                        flex-shrink: 0;
+                      "
+                    ></div>
+                    <span
+                      style="
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: var(--text-dim);
+                      "
+                      >Resultados comprobados</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:var(--acid);color:var(--black)"
+                >
+                  Conocé nuestra historia
+                </button>
+              </div>
+              <div style="position: relative">
+                <img
+                  src="https://images.unsplash.com/photo-1605490855119-94921710a47f?w=700&amp;h=900&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Atleta entrenando en Forja"
+                  style="
+                    width: 100%;
+                    height: 480px;
+                    object-fit: cover;
+                    border-radius: 2px;
+                    display: block;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: -20px;
+                    left: -16px;
+                    background: var(--acid);
+                    color: var(--black);
+                    padding: 20px 24px;
+                    border-radius: 2px;
+                  "
+                >
+                  <div class="display" style="font-size: 44px; line-height: 1">
+                    98%
+                  </div>
+                  <div
+                    style="
+                      font-size: 11px;
+                      font-weight: 600;
+                      margin-top: 4px;
+                      text-transform: uppercase;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    Tasa de retención
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .about-grid {
+                grid-template-columns: 1fr 1fr !important;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="planes"
+          class="section-pad"
+          style="background: var(--surface)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 56px;
+                flex-wrap: wrap;
+                gap: 20px;
+              "
+            >
+              <div>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: var(--acid);
+                    margin-bottom: 16px;
+                  "
+                  ><span
+                    style="
+                      width: 24px;
+                      height: 1.5px;
+                      background: var(--acid);
+                      display: inline-block;
+                    "
+                  ></span
+                  >Planes y Precios</span
+                >
+                <h2
+                  class="display"
+                  style="font-size: clamp(40px, 8vw, 68px); line-height: 0.95"
+                >
+                  ELEGÍ<br />TU NIVEL.
+                </h2>
+              </div>
+              <p
+                style="
+                  font-size: 14px;
+                  color: var(--text-dim);
+                  max-width: 280px;
+                  line-height: 1.7;
+                "
+              >
+                Sin contratos de permanencia. Podés cambiar de plan en cualquier
+                momento.
+              </p>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 2px"
+              class="plans-grid"
+            >
+              <div
+                class="card-hover"
+                style="
+                  padding: 36px 32px;
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  background: var(--black);
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                  "
+                >
+                  <div>
+                    <div
+                      class="display"
+                      style="font-size: 28px; color: var(--text)"
+                    >
+                      BÁSICO
+                    </div>
+                    <div
+                      style="
+                        font-size: 13px;
+                        color: var(--muted);
+                        margin-top: 4px;
+                      "
+                    >
+                      Todo lo esencial para comenzar
+                    </div>
+                  </div>
+                  <div style="text-align: right">
+                    <span
+                      class="display"
+                      style="font-size: 40px; color: var(--acid)"
+                      >$18.900</span
+                    ><span style="font-size: 13px; color: var(--muted)"
+                      >/mes</span
+                    >
+                  </div>
+                </div>
+                <div
+                  style="
+                    border-top: 1px solid var(--border);
+                    padding-top: 20px;
+                    margin-bottom: 24px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Acceso libre sala de pesas</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Vestuarios premium</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >App de seguimiento</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >1 clase grupal/semana</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--acid);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;width:100%;justify-content:center"
+                >
+                  Elegir Básico
+                </button>
+              </div>
+              <div
+                class="card-hover plan-featured"
+                style="
+                  padding: 36px 32px;
+                  border: 1.5px solid var(--acid);
+                  border-radius: 2px;
+                  background: var(--acid);
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    position: absolute;
+                    top: -1px;
+                    right: 24px;
+                    background: var(--black);
+                    color: var(--acid);
+                    font-size: 9px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    padding: 4px 12px;
+                    border-radius: 0 0 4px 4px;
+                  "
+                >
+                  Más popular
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                  "
+                >
+                  <div>
+                    <div
+                      class="display"
+                      style="font-size: 28px; color: var(--black)"
+                    >
+                      PRO
+                    </div>
+                    <div
+                      style="
+                        font-size: 13px;
+                        color: rgba(8, 8, 8, 0.6);
+                        margin-top: 4px;
+                      "
+                    >
+                      El plan favorito de nuestros socios
+                    </div>
+                  </div>
+                  <div style="text-align: right">
+                    <span
+                      class="display"
+                      style="font-size: 40px; color: var(--black)"
+                      >$29.900</span
+                    ><span style="font-size: 13px; color: rgba(8, 8, 8, 0.6)"
+                      >/mes</span
+                    >
+                  </div>
+                </div>
+                <div
+                  style="
+                    border-top: 1px solid rgba(8, 8, 8, 0.15);
+                    padding-top: 20px;
+                    margin-bottom: 24px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--black)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--black)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--black)"
+                      >Todo lo del plan Básico</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--black)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--black)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--black)"
+                      >Clases grupales ilimitadas</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--black)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--black)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--black)"
+                      >1 sesión PT/mes</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--black)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--black)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--black)"
+                      >Asesoría nutricional</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--black)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--black)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--black)"
+                      >Acceso las 3 sedes</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:var(--black);color:var(--acid);width:100%;justify-content:center;border-color:var(--black)"
+                >
+                  Elegir Pro
+                </button>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  padding: 36px 32px;
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  background: var(--black);
+                  position: relative;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                  "
+                >
+                  <div>
+                    <div
+                      class="display"
+                      style="font-size: 28px; color: var(--text)"
+                    >
+                      ELITE
+                    </div>
+                    <div
+                      style="
+                        font-size: 13px;
+                        color: var(--muted);
+                        margin-top: 4px;
+                      "
+                    >
+                      Para quienes van en serio
+                    </div>
+                  </div>
+                  <div style="text-align: right">
+                    <span
+                      class="display"
+                      style="font-size: 40px; color: var(--acid)"
+                      >$44.900</span
+                    ><span style="font-size: 13px; color: var(--muted)"
+                      >/mes</span
+                    >
+                  </div>
+                </div>
+                <div
+                  style="
+                    border-top: 1px solid var(--border);
+                    padding-top: 20px;
+                    margin-bottom: 24px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Todo lo del plan Pro</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >4 sesiones PT/mes</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Plan nutricional personalizado</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Integración wearables</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                      margin-bottom: 10px;
+                    "
+                  >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle
+                        cx="7"
+                        cy="7"
+                        r="6.5"
+                        stroke="var(--acid)"
+                        stroke-width="1"
+                      ></circle>
+                      <path
+                        d="M4 7l2 2 4-4"
+                        stroke="var(--acid)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path></svg
+                    ><span style="font-size: 14px; color: var(--text-dim)"
+                      >Acceso prioritario</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--acid);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;width:100%;justify-content:center"
+                >
+                  Elegir Elite
+                </button>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .plans-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 16px !important;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="clases"
+          class="section-pad"
+          style="background: var(--black)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >Clases y Horarios</span
+            >
+            <h2
+              class="display"
+              style="
+                font-size: clamp(40px, 8vw, 68px);
+                line-height: 0.95;
+                margin-bottom: 40px;
+              "
+            >
+              ENCONTRÁ<br />TU CLASE.
+            </h2>
+            <div
+              style="
+                display: flex;
+                gap: 6px;
+                flex-wrap: wrap;
+                margin-bottom: 32px;
+              "
+            >
+              <button
+                type="button"
+                class="tab-btn active"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:var(--acid);color:var(--black);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                Funcional</button
+              ><button
+                type="button"
+                class="tab-btn"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                Spinning</button
+              ><button
+                type="button"
+                class="tab-btn"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                CrossFit</button
+              ><button
+                type="button"
+                class="tab-btn"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                Yoga</button
+              ><button
+                type="button"
+                class="tab-btn"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                Boxing</button
+              ><button
+                type="button"
+                class="tab-btn"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:8px 18px;border-radius:2px;border:1.5px solid var(--border);background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;letter-spacing:0.04em"
+              >
+                Pilates
+              </button>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 24px"
+              class="schedule-grid"
+            >
+              <div
+                style="
+                  padding: 28px;
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                "
+              >
+                <div
+                  class="display"
+                  style="font-size: 32px; margin-bottom: 12px"
+                >
+                  FUNCIONAL
+                </div>
+                <p
+                  style="
+                    font-size: 14px;
+                    color: var(--text-dim);
+                    line-height: 1.7;
+                    margin-bottom: 20px;
+                  "
+                >
+                  Entrenamiento de movimientos funcionales multi-articulares
+                  para fuerza y resistencia real.
+                </p>
+                <div style="display: flex; gap: 20px">
+                  <div>
+                    <div
+                      style="
+                        font-size: 10px;
+                        color: var(--muted);
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Nivel
+                    </div>
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: var(--acid);
+                      "
+                    >
+                      Todos los niveles
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-size: 10px;
+                        color: var(--muted);
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                        margin-bottom: 4px;
+                      "
+                    >
+                      Duración
+                    </div>
+                    <div
+                      style="
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: var(--acid);
+                      "
+                    >
+                      55 min
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  overflow: hidden;
+                "
+              >
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    border-bottom: 1px solid var(--border);
+                  "
+                >
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Lun
+                  </div>
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Mar
+                  </div>
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Mié
+                  </div>
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Jue
+                  </div>
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Vie
+                  </div>
+                  <div
+                    style="
+                      padding: 12px 8px;
+                      text-align: center;
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      border-right: 1px solid var(--border);
+                    "
+                  >
+                    Sáb
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    padding: 16px 0;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: 1px solid var(--border);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      08:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      10:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      18:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      20:00
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: 1px solid var(--border);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      07:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      09:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      19:00
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: 1px solid var(--border);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      08:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      18:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      20:00
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: 1px solid var(--border);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      07:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      10:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      19:00
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: 1px solid var(--border);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      08:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      09:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      18:00
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      padding: 0 8px;
+                      border-right: none;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      10:00
+                    </div>
+                    <div
+                      style="
+                        background: var(--acid);
+                        color: var(--black);
+                        border-radius: 2px;
+                        padding: 4px 6px;
+                        font-size: 10px;
+                        font-weight: 700;
+                        text-align: center;
+                        cursor: pointer;
+                      "
+                    >
+                      12:00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .schedule-grid {
+                grid-template-columns: 1fr 2fr !important;
+                align-items: start;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="equipo"
+          class="section-pad"
+          style="background: var(--surface)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 48px;
+                flex-wrap: wrap;
+                gap: 16px;
+              "
+            >
+              <div>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: var(--acid);
+                    margin-bottom: 16px;
+                  "
+                  ><span
+                    style="
+                      width: 24px;
+                      height: 1.5px;
+                      background: var(--acid);
+                      display: inline-block;
+                    "
+                  ></span
+                  >Nuestro Equipo</span
+                >
+                <h2
+                  class="display"
+                  style="font-size: clamp(40px, 8vw, 68px); line-height: 0.95"
+                >
+                  LOS MEJORES<br />INSTRUCTORES.
+                </h2>
+              </div>
+              <button
+                type="button"
+                style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--border);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:transparent;color:var(--text)"
+              >
+                Ver todos →
+              </button>
+            </div>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+              "
+              class="team-grid"
+            >
+              <div
+                class="card-hover"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  border: 1.5px solid var(--border);
+                  cursor: pointer;
+                  aspect-ratio: 3/4;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1578924608828-79a71150f711?w=500&amp;h=700&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Marcos Villegas"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    filter: grayscale(20%) brightness(0.6);
+                    transition:
+                      transform 0.4s ease,
+                      filter 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px 20px 20px;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.95) 0%,
+                      transparent 100%
+                    );
+                  "
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    Funcional &amp; HIIT
+                  </div>
+                  <div
+                    class="display"
+                    style="font-size: 22px; line-height: 1.1"
+                  >
+                    MARCOS VILLEGAS
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: var(--muted);
+                      margin-top: 4px;
+                    "
+                  >
+                    8 años de experiencia
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  border: 1.5px solid var(--border);
+                  cursor: pointer;
+                  aspect-ratio: 3/4;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1604335788369-94f349ae5243?w=500&amp;h=700&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Valentina Ríos"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    filter: grayscale(20%) brightness(0.6);
+                    transition:
+                      transform 0.4s ease,
+                      filter 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px 20px 20px;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.95) 0%,
+                      transparent 100%
+                    );
+                  "
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    Yoga &amp; Pilates
+                  </div>
+                  <div
+                    class="display"
+                    style="font-size: 22px; line-height: 1.1"
+                  >
+                    VALENTINA RÍOS
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: var(--muted);
+                      margin-top: 4px;
+                    "
+                  >
+                    6 años de experiencia
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  border: 1.5px solid var(--border);
+                  cursor: pointer;
+                  aspect-ratio: 3/4;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1750698545009-679820502908?w=500&amp;h=700&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Diego Núñez"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    filter: grayscale(20%) brightness(0.6);
+                    transition:
+                      transform 0.4s ease,
+                      filter 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px 20px 20px;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.95) 0%,
+                      transparent 100%
+                    );
+                  "
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    CrossFit &amp; Fuerza
+                  </div>
+                  <div
+                    class="display"
+                    style="font-size: 22px; line-height: 1.1"
+                  >
+                    DIEGO NÚÑEZ
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: var(--muted);
+                      margin-top: 4px;
+                    "
+                  >
+                    10 años de experiencia
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  border: 1.5px solid var(--border);
+                  cursor: pointer;
+                  aspect-ratio: 3/4;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1434682772747-f16d3ea162c3?w=500&amp;h=700&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Camila Bront"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    filter: grayscale(20%) brightness(0.6);
+                    transition:
+                      transform 0.4s ease,
+                      filter 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    padding: 24px 20px 20px;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.95) 0%,
+                      transparent 100%
+                    );
+                  "
+                >
+                  <div
+                    style="
+                      display: inline-block;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                      margin-bottom: 8px;
+                    "
+                  >
+                    Spinning &amp; Cardio
+                  </div>
+                  <div
+                    class="display"
+                    style="font-size: 22px; line-height: 1.1"
+                  >
+                    CAMILA BRONT
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: var(--muted);
+                      margin-top: 4px;
+                    "
+                  >
+                    5 años de experiencia
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 640px) {
+              .team-grid {
+                grid-template-columns: repeat(4, 1fr) !important;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="sedes"
+          class="section-pad"
+          style="background: var(--black)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >Instalaciones</span
+            >
+            <h2
+              class="display"
+              style="
+                font-size: clamp(40px, 8vw, 68px);
+                line-height: 0.95;
+                margin-bottom: 40px;
+              "
+            >
+              ESPACIOS<br />DISEÑADOS<br /><span style="color: var(--acid)"
+                >PARA VOS.</span
+              >
+            </h2>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 8px;
+              "
+              class="gallery-grid"
+            >
+              <div
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  height: 320px;
+                  grid-column: span 2;
+                  cursor: pointer;
+                "
+                class="card-hover"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1758448756350-3d0eec02ba37?w=1200&amp;h=500&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Sala principal"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.8) 0%,
+                      transparent 100%
+                    );
+                    padding: 20px 16px 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: var(--text-dim);
+                      letter-spacing: 0.06em;
+                    "
+                    >Sala principal</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  height: 220px;
+                  grid-column: auto;
+                  cursor: pointer;
+                "
+                class="card-hover"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1778828494354-9b717d36dc99?w=600&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Zona de pesas libres"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.8) 0%,
+                      transparent 100%
+                    );
+                    padding: 20px 16px 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: var(--text-dim);
+                      letter-spacing: 0.06em;
+                    "
+                    >Zona de pesas libres</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  height: 220px;
+                  grid-column: auto;
+                  cursor: pointer;
+                "
+                class="card-hover"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1778828450059-f39d5bbb01af?w=600&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Área de cardio"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.8) 0%,
+                      transparent 100%
+                    );
+                    padding: 20px 16px 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: var(--text-dim);
+                      letter-spacing: 0.06em;
+                    "
+                    >Área de cardio</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  height: 220px;
+                  grid-column: auto;
+                  cursor: pointer;
+                "
+                class="card-hover"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1765728617805-b9f22d64e5b3?w=600&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Sala de clases"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.8) 0%,
+                      transparent 100%
+                    );
+                    padding: 20px 16px 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: var(--text-dim);
+                      letter-spacing: 0.06em;
+                    "
+                    >Sala de clases</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 2px;
+                  height: 220px;
+                  grid-column: auto;
+                  cursor: pointer;
+                "
+                class="card-hover"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1761971976282-b2bb051a5474?w=600&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80"
+                  alt="Instalaciones Sede Norte"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    transition: transform 0.4s ease;
+                  "
+                />
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(
+                      to top,
+                      rgba(8, 8, 8, 0.8) 0%,
+                      transparent 100%
+                    );
+                    padding: 20px 16px 14px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: var(--text-dim);
+                      letter-spacing: 0.06em;
+                    "
+                    >Instalaciones Sede Norte</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 640px) {
+              .gallery-grid { grid-template-columns: repeat(4, 1fr) !important; }
+              .gallery-grid &gt; div:first-child { grid-column: span 2 !important; }
+            }
+          </style>
+        </section>
+        <section class="section-pad" style="background: var(--surface)">
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 48px;
+                flex-wrap: wrap;
+                gap: 16px;
+              "
+            >
+              <div>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: var(--acid);
+                    margin-bottom: 16px;
+                  "
+                  ><span
+                    style="
+                      width: 24px;
+                      height: 1.5px;
+                      background: var(--acid);
+                      display: inline-block;
+                    "
+                  ></span
+                  >Nutrición y Hábitos</span
+                >
+                <h2
+                  class="display"
+                  style="font-size: clamp(40px, 8vw, 68px); line-height: 0.95"
+                >
+                  COMÉ<br />PARA<br /><span style="color: var(--acid)"
+                    >RENDIR.</span
+                  >
+                </h2>
+              </div>
+              <button
+                type="button"
+                style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--border);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:transparent;color:var(--text)"
+              >
+                Ver todos →
+              </button>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 16px"
+              class="nutrition-grid"
+            >
+              <div
+                class="card-hover"
+                style="
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  overflow: hidden;
+                  cursor: pointer;
+                "
+              >
+                <div style="position: relative; height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?w=700&amp;h=300&amp;fit=crop&amp;auto=format&amp;q=80"
+                    alt="Cómo armar tu plan alimentario sin morir en el intento"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                      filter: brightness(0.75);
+                    "
+                  />
+                  <div
+                    style="
+                      position: absolute;
+                      top: 16px;
+                      left: 16px;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                    "
+                  >
+                    Nutrición
+                  </div>
+                </div>
+                <div style="padding: 20px 20px 22px">
+                  <h3
+                    style="
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 1.4;
+                      margin-bottom: 12px;
+                    "
+                  >
+                    Cómo armar tu plan alimentario sin morir en el intento
+                  </h3>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span style="font-size: 11px; color: var(--muted)"
+                      >4 min de lectura</span
+                    ><span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: var(--acid);
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                      "
+                      >Leer →</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  overflow: hidden;
+                  cursor: pointer;
+                "
+              >
+                <div style="position: relative; height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1543353071-c953d88f7033?w=700&amp;h=300&amp;fit=crop&amp;auto=format&amp;q=80"
+                    alt="Pre y post entreno: qué comer para maximizar resultados"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                      filter: brightness(0.75);
+                    "
+                  />
+                  <div
+                    style="
+                      position: absolute;
+                      top: 16px;
+                      left: 16px;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                    "
+                  >
+                    Performance
+                  </div>
+                </div>
+                <div style="padding: 20px 20px 22px">
+                  <h3
+                    style="
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 1.4;
+                      margin-bottom: 12px;
+                    "
+                  >
+                    Pre y post entreno: qué comer para maximizar resultados
+                  </h3>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span style="font-size: 11px; color: var(--muted)"
+                      >3 min de lectura</span
+                    ><span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: var(--acid);
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                      "
+                      >Leer →</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card-hover"
+                style="
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  overflow: hidden;
+                  cursor: pointer;
+                "
+              >
+                <div style="position: relative; height: 200px">
+                  <img
+                    src="https://images.unsplash.com/photo-1606858274001-dd10efc5ce7d?w=700&amp;h=300&amp;fit=crop&amp;auto=format&amp;q=80"
+                    alt="Hidratación y rendimiento: la variable que todos ignoran"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      display: block;
+                      filter: brightness(0.75);
+                    "
+                  />
+                  <div
+                    style="
+                      position: absolute;
+                      top: 16px;
+                      left: 16px;
+                      background: var(--acid);
+                      color: var(--black);
+                      font-size: 9px;
+                      font-weight: 700;
+                      letter-spacing: 0.15em;
+                      text-transform: uppercase;
+                      padding: 3px 8px;
+                      border-radius: 1px;
+                    "
+                  >
+                    Hábitos
+                  </div>
+                </div>
+                <div style="padding: 20px 20px 22px">
+                  <h3
+                    style="
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 1.4;
+                      margin-bottom: 12px;
+                    "
+                  >
+                    Hidratación y rendimiento: la variable que todos ignoran
+                  </h3>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                  >
+                    <span style="font-size: 11px; color: var(--muted)"
+                      >5 min de lectura</span
+                    ><span
+                      style="
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: var(--acid);
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                      "
+                      >Leer →</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 640px) {
+              .nutrition-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+              }
+            }
+          </style>
+        </section>
+        <section class="section-pad" style="background: var(--black)">
+          <div style="max-width: 1100px; margin: 0 auto">
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >Tecnología y Progreso</span
+            >
+            <h2
+              class="display"
+              style="
+                font-size: clamp(40px, 8vw, 68px);
+                line-height: 0.95;
+                margin-bottom: 16px;
+              "
+            >
+              MEDÍ CADA<br /><span style="color: var(--acid)">AVANCE.</span>
+            </h2>
+            <p
+              style="
+                font-size: 15px;
+                color: var(--text-dim);
+                line-height: 1.7;
+                max-width: 480px;
+                margin-bottom: 48px;
+              "
+            >
+              Nuestra app conecta con tus wearables para darte métricas reales
+              en tiempo real. Cada entreno queda registrado, analizado y
+              comparado con tus metas.
+            </p>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 32px"
+              class="tech-grid"
+            >
+              <div>
+                <div
+                  style="
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: var(--muted);
+                    margin-bottom: 24px;
+                  "
+                >
+                  Métricas promedio de socios activos
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 20px">
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                      "
+                    >
+                      <span style="font-size: 13px; font-weight: 500"
+                        >Fuerza</span
+                      ><span
+                        class="display"
+                        style="font-size: 20px; color: var(--acid)"
+                        >78<span
+                          style="font-size:12px;color:var(--muted);font-family:&#x27;DM Sans&#x27;, sans-serif;font-weight:400"
+                        >
+                          kg promedio</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      style="
+                        height: 3px;
+                        background: var(--border);
+                        border-radius: 2px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 100%;
+                          border-radius: 2px;
+                          background: var(--acid);
+                          width: 78%;
+                          transition: width 1s ease;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                      "
+                    >
+                      <span style="font-size: 13px; font-weight: 500"
+                        >Cardio VO2</span
+                      ><span
+                        class="display"
+                        style="font-size: 20px; color: var(--acid)"
+                        >65<span
+                          style="font-size:12px;color:var(--muted);font-family:&#x27;DM Sans&#x27;, sans-serif;font-weight:400"
+                        >
+                          ml/kg/min</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      style="
+                        height: 3px;
+                        background: var(--border);
+                        border-radius: 2px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 100%;
+                          border-radius: 2px;
+                          background: var(--acid);
+                          width: 65%;
+                          transition: width 1s ease;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                      "
+                    >
+                      <span style="font-size: 13px; font-weight: 500"
+                        >Recuperación</span
+                      ><span
+                        class="display"
+                        style="font-size: 20px; color: var(--acid)"
+                        >91<span
+                          style="font-size:12px;color:var(--muted);font-family:&#x27;DM Sans&#x27;, sans-serif;font-weight:400"
+                        >
+                          score</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      style="
+                        height: 3px;
+                        background: var(--border);
+                        border-radius: 2px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 100%;
+                          border-radius: 2px;
+                          background: var(--acid);
+                          width: 91%;
+                          transition: width 1s ease;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 8px;
+                      "
+                    >
+                      <span style="font-size: 13px; font-weight: 500"
+                        >Consistencia</span
+                      ><span
+                        class="display"
+                        style="font-size: 20px; color: var(--acid)"
+                        >84<span
+                          style="font-size:12px;color:var(--muted);font-family:&#x27;DM Sans&#x27;, sans-serif;font-weight:400"
+                        >
+                          %</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      style="
+                        height: 3px;
+                        background: var(--border);
+                        border-radius: 2px;
+                      "
+                    >
+                      <div
+                        style="
+                          height: 100%;
+                          border-radius: 2px;
+                          background: var(--acid);
+                          width: 84%;
+                          transition: width 1s ease;
+                        "
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: var(--muted);
+                    margin-bottom: 24px;
+                  "
+                >
+                  Integraciones disponibles
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    margin-bottom: 32px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 14px 16px;
+                      border: 1.5px solid var(--border);
+                      border-radius: 2px;
+                      transition: border-color 0.2s;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        background: var(--surface2);
+                        border-radius: 6px;
+                      "
+                    ></div>
+                    <span style="font-size: 14px; font-weight: 500"
+                      >Apple Health</span
+                    ><span
+                      style="
+                        margin-left: auto;
+                        font-size: 9px;
+                        color: var(--acid);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                      "
+                      >Conectar</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 14px 16px;
+                      border: 1.5px solid var(--border);
+                      border-radius: 2px;
+                      transition: border-color 0.2s;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        background: var(--surface2);
+                        border-radius: 6px;
+                      "
+                    ></div>
+                    <span style="font-size: 14px; font-weight: 500"
+                      >Garmin Connect</span
+                    ><span
+                      style="
+                        margin-left: auto;
+                        font-size: 9px;
+                        color: var(--acid);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                      "
+                      >Conectar</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 14px 16px;
+                      border: 1.5px solid var(--border);
+                      border-radius: 2px;
+                      transition: border-color 0.2s;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        background: var(--surface2);
+                        border-radius: 6px;
+                      "
+                    ></div>
+                    <span style="font-size: 14px; font-weight: 500"
+                      >Google Fit</span
+                    ><span
+                      style="
+                        margin-left: auto;
+                        font-size: 9px;
+                        color: var(--acid);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                      "
+                      >Conectar</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 14px 16px;
+                      border: 1.5px solid var(--border);
+                      border-radius: 2px;
+                      transition: border-color 0.2s;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        background: var(--surface2);
+                        border-radius: 6px;
+                      "
+                    ></div>
+                    <span style="font-size: 14px; font-weight: 500">Fitbit</span
+                    ><span
+                      style="
+                        margin-left: auto;
+                        font-size: 9px;
+                        color: var(--acid);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                      "
+                      >Conectar</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      padding: 14px 16px;
+                      border: 1.5px solid var(--border);
+                      border-radius: 2px;
+                      transition: border-color 0.2s;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        background: var(--surface2);
+                        border-radius: 6px;
+                      "
+                    ></div>
+                    <span style="font-size: 14px; font-weight: 500"
+                      >Polar Flow</span
+                    ><span
+                      style="
+                        margin-left: auto;
+                        font-size: 9px;
+                        color: var(--acid);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.12em;
+                      "
+                      >Conectar</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .tech-grid {
+                grid-template-columns: 1fr 1fr !important;
+                align-items: start;
+              }
+            }
+          </style>
+        </section>
+        <section class="section-pad" style="background: var(--surface)">
+          <div style="max-width: 1100px; margin: 0 auto">
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >Testimonios</span
+            >
+            <h2
+              class="display"
+              style="
+                font-size: clamp(40px, 8vw, 68px);
+                line-height: 0.95;
+                margin-bottom: 48px;
+              "
+            >
+              ELLOS<br />YA DAN<br /><span style="color: var(--acid)"
+                >TESTIMONIO.</span
+              >
+            </h2>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 40px"
+              class="test-layout"
+            >
+              <div
+                style="
+                  padding: 40px 36px;
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  position: relative;
+                "
+              >
+                <div
+                  class="display"
+                  style="
+                    font-size: 80px;
+                    color: var(--acid);
+                    line-height: 0.7;
+                    position: absolute;
+                    top: 24px;
+                    left: 28px;
+                    opacity: 0.3;
+                  "
+                >
+                  &quot;
+                </div>
+                <p
+                  style="
+                    font-size: clamp(17px, 3vw, 22px);
+                    line-height: 1.6;
+                    font-weight: 300;
+                    color: var(--text);
+                    margin-bottom: 32px;
+                    margin-top: 20px;
+                  "
+                >
+                  Llegué sin saber nada de entrenamiento y hoy corro 10K y
+                  levanto el doble de lo que pensé que podría. Forja me cambió
+                  la vida de verdad.
+                </p>
+                <div style="display: flex; align-items: center; gap: 16px">
+                  <div
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      border-radius: 50%;
+                      background: var(--acid);
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    "
+                  >
+                    <span
+                      class="display"
+                      style="font-size: 18px; color: var(--black)"
+                      >MB</span
+                    >
+                  </div>
+                  <div>
+                    <div style="font-weight: 600; font-size: 15px">
+                      Martina Blanco
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        color: var(--muted);
+                        margin-top: 2px;
+                      "
+                    >
+                      Socia desde 2021
+                    </div>
+                  </div>
+                  <div style="margin-left: auto; display: flex; gap: 3px">
+                    <div
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: var(--acid);
+                        border-radius: 1px;
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div style="display: flex; flex-direction: column; gap: 8px">
+                  <button
+                    type="button"
+                    style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:16px 20px;border:1.5px solid var(--acid);border-radius:2px;background:transparent;cursor:pointer;text-align:left;transition:all 0.2s"
+                  >
+                    <div
+                      style="
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: var(--acid);
+                      "
+                    >
+                      Martina Blanco
+                    </div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: var(--muted);
+                        margin-top: 3px;
+                      "
+                    >
+                      Socia desde 2021
+                    </div></button
+                  ><button
+                    type="button"
+                    style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:16px 20px;border:1.5px solid var(--border);border-radius:2px;background:transparent;cursor:pointer;text-align:left;transition:all 0.2s"
+                  >
+                    <div
+                      style="
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: var(--text);
+                      "
+                    >
+                      Lucas Correa
+                    </div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: var(--muted);
+                        margin-top: 3px;
+                      "
+                    >
+                      Socio desde 2020
+                    </div></button
+                  ><button
+                    type="button"
+                    style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:16px 20px;border:1.5px solid var(--border);border-radius:2px;background:transparent;cursor:pointer;text-align:left;transition:all 0.2s"
+                  >
+                    <div
+                      style="
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: var(--text);
+                      "
+                    >
+                      Andrea Romero
+                    </div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: var(--muted);
+                        margin-top: 3px;
+                      "
+                    >
+                      Socia desde 2022
+                    </div></button
+                  ><button
+                    type="button"
+                    style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:16px 20px;border:1.5px solid var(--border);border-radius:2px;background:transparent;cursor:pointer;text-align:left;transition:all 0.2s"
+                  >
+                    <div
+                      style="
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: var(--text);
+                      "
+                    >
+                      Tomás Ferreira
+                    </div>
+                    <div
+                      style="
+                        font-size: 11px;
+                        color: var(--muted);
+                        margin-top: 3px;
+                      "
+                    >
+                      Socio desde 2019
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .test-layout {
+                grid-template-columns: 2fr 1fr !important;
+                align-items: start;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="sedes-mapa"
+          class="section-pad"
+          style="background: var(--black)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <span
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.18em;
+                text-transform: uppercase;
+                color: var(--acid);
+                margin-bottom: 16px;
+              "
+              ><span
+                style="
+                  width: 24px;
+                  height: 1.5px;
+                  background: var(--acid);
+                  display: inline-block;
+                "
+              ></span
+              >Nuestras Sedes</span
+            >
+            <h2
+              class="display"
+              style="
+                font-size: clamp(40px, 8vw, 68px);
+                line-height: 0.95;
+                margin-bottom: 32px;
+              "
+            >
+              TRES SEDES,<br /><span style="color: var(--acid)"
+                >UN EQUIPO.</span
+              >
+            </h2>
+            <div
+              style="
+                display: flex;
+                gap: 6px;
+                margin-bottom: 32px;
+                flex-wrap: wrap;
+              "
+            >
+              <button
+                type="button"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:10px 20px;border:1.5px solid var(--border);border-radius:2px;background:var(--acid);color:var(--black);font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s"
+              >
+                Sede Centro</button
+              ><button
+                type="button"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:10px 20px;border:1.5px solid var(--border);border-radius:2px;background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s"
+              >
+                Sede Norte</button
+              ><button
+                type="button"
+                style="font-family:&#x27;DM Sans&#x27;, sans-serif;padding:10px 20px;border:1.5px solid var(--border);border-radius:2px;background:transparent;color:var(--text-dim);font-size:13px;font-weight:500;cursor:pointer;transition:all 0.2s"
+              >
+                Sede Sur
+              </button>
+            </div>
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 16px"
+              class="map-grid"
+            >
+              <div
+                style="
+                  height: 320px;
+                  background: var(--surface);
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  position: relative;
+                  overflow: hidden;
+                "
+              >
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 20%;
+                      left: 0;
+                      right: 0;
+                      height: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      position: absolute;
+                      left: 20%;
+                      top: 0;
+                      bottom: 0;
+                      width: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 40%;
+                      left: 0;
+                      right: 0;
+                      height: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      position: absolute;
+                      left: 40%;
+                      top: 0;
+                      bottom: 0;
+                      width: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 60%;
+                      left: 0;
+                      right: 0;
+                      height: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      position: absolute;
+                      left: 60%;
+                      top: 0;
+                      bottom: 0;
+                      width: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                </div>
+                <div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 80%;
+                      left: 0;
+                      right: 0;
+                      height: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                  <div
+                    style="
+                      position: absolute;
+                      left: 80%;
+                      top: 0;
+                      bottom: 0;
+                      width: 1px;
+                      background: var(--border);
+                    "
+                  ></div>
+                </div>
+                <div
+                  style="
+                    position: absolute;
+                    top: 35%;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background: var(--surface2);
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    top: 65%;
+                    left: 0;
+                    right: 0;
+                    height: 2px;
+                    background: var(--surface2);
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    left: 30%;
+                    top: 0;
+                    bottom: 0;
+                    width: 3px;
+                    background: var(--surface2);
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    left: 60%;
+                    top: 0;
+                    bottom: 0;
+                    width: 2px;
+                    background: var(--surface2);
+                  "
+                ></div>
+                <div
+                  style="
+                    position: absolute;
+                    top: 28%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  "
+                >
+                  <div
+                    style="
+                      width: 20px;
+                      height: 20px;
+                      background: var(--acid);
+                      border-radius: 50% 50% 50% 0;
+                      transform: rotate(-45deg);
+                      margin: 0 auto;
+                    "
+                  ></div>
+                  <div
+                    style="
+                      margin-top: 6px;
+                      background: var(--surface);
+                      border: 1px solid var(--border);
+                      padding: 4px 8px;
+                      border-radius: 2px;
+                      font-size: 9px;
+                      font-weight: 700;
+                      white-space: nowrap;
+                      color: var(--text);
+                    "
+                  >
+                    Sede Centro
+                  </div>
+                </div>
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 9px;
+                    color: var(--muted);
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                  "
+                >
+                  Vista de ubicación — mapa interactivo
+                </div>
+              </div>
+              <div
+                style="
+                  padding: 28px 28px;
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                "
+              >
+                <div
+                  class="display"
+                  style="font-size: 28px; margin-bottom: 20px"
+                >
+                  SEDE CENTRO
+                </div>
+                <div style="margin-bottom: 18px">
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: var(--muted);
+                      text-transform: uppercase;
+                      letter-spacing: 0.12em;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Dirección
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      color: var(--text);
+                      line-height: 1.5;
+                    "
+                  >
+                    Av. Corrientes 1234, CABA
+                  </div>
+                </div>
+                <div style="margin-bottom: 18px">
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: var(--muted);
+                      text-transform: uppercase;
+                      letter-spacing: 0.12em;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Teléfono
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      color: var(--text);
+                      line-height: 1.5;
+                    "
+                  >
+                    +54 11 4000-1234
+                  </div>
+                </div>
+                <div style="margin-bottom: 18px">
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: var(--muted);
+                      text-transform: uppercase;
+                      letter-spacing: 0.12em;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Horarios
+                  </div>
+                  <div
+                    style="
+                      font-size: 14px;
+                      color: var(--text);
+                      line-height: 1.5;
+                    "
+                  >
+                    Lun–Vie 6–23h | Sáb–Dom 8–20h
+                  </div>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 24px">
+                  <button
+                    type="button"
+                    style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:var(--acid);color:var(--black)"
+                  >
+                    Cómo llegar</button
+                  ><button
+                    type="button"
+                    style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:1.5px solid var(--border);cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:transparent;color:var(--text)"
+                  >
+                    Ver horarios
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .map-grid {
+                grid-template-columns: 2fr 1fr !important;
+                align-items: start;
+              }
+            }
+          </style>
+        </section>
+        <section
+          id="contacto"
+          class="section-pad"
+          style="background: var(--surface)"
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="display: grid; grid-template-columns: 1fr; gap: 48px"
+              class="contact-grid"
+            >
+              <div>
+                <span
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    letter-spacing: 0.18em;
+                    text-transform: uppercase;
+                    color: var(--acid);
+                    margin-bottom: 16px;
+                  "
+                  ><span
+                    style="
+                      width: 24px;
+                      height: 1.5px;
+                      background: var(--acid);
+                      display: inline-block;
+                    "
+                  ></span
+                  >Contacto</span
+                >
+                <h2
+                  class="display"
+                  style="
+                    font-size: clamp(40px, 8vw, 64px);
+                    line-height: 0.95;
+                    margin-bottom: 20px;
+                  "
+                >
+                  DA EL<br />PRIMER<br /><span style="color: var(--acid)"
+                    >PASO.</span
+                  >
+                </h2>
+                <p
+                  style="
+                    font-size: 15px;
+                    color: var(--text-dim);
+                    line-height: 1.7;
+                    margin-bottom: 36px;
+                  "
+                >
+                  Completá el formulario y un asesor te contacta en menos de 24
+                  horas para diseñar tu plan personalizado.
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 20px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      padding: 16px 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: var(--muted);
+                          text-transform: uppercase;
+                          letter-spacing: 0.12em;
+                          margin-bottom: 4px;
+                        "
+                      >
+                        WhatsApp
+                      </div>
+                      <div
+                        style="
+                          font-size: 15px;
+                          font-weight: 500;
+                          color: var(--acid);
+                        "
+                      >
+                        +54 11 4000-0000
+                      </div>
+                    </div>
+                    <span style="font-size: 18px; color: var(--muted)">→</span>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      padding: 16px 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: var(--muted);
+                          text-transform: uppercase;
+                          letter-spacing: 0.12em;
+                          margin-bottom: 4px;
+                        "
+                      >
+                        Email
+                      </div>
+                      <div
+                        style="
+                          font-size: 15px;
+                          font-weight: 500;
+                          color: var(--acid);
+                        "
+                      >
+                        hola@forja.ar
+                      </div>
+                    </div>
+                    <span style="font-size: 18px; color: var(--muted)">→</span>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      padding: 16px 0;
+                      border-bottom: 1px solid var(--border);
+                    "
+                  >
+                    <div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: var(--muted);
+                          text-transform: uppercase;
+                          letter-spacing: 0.12em;
+                          margin-bottom: 4px;
+                        "
+                      >
+                        Instagram
+                      </div>
+                      <div
+                        style="
+                          font-size: 15px;
+                          font-weight: 500;
+                          color: var(--acid);
+                        "
+                      >
+                        @forja.gym
+                      </div>
+                    </div>
+                    <span style="font-size: 18px; color: var(--muted)">→</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1.5px solid var(--border);
+                  border-radius: 2px;
+                  padding: 36px 32px;
+                "
+              >
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 16px;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <div style="grid-column: auto">
+                    <label
+                      style="
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.12em;
+                        text-transform: uppercase;
+                        color: var(--muted);
+                        display: block;
+                        margin-bottom: 6px;
+                      "
+                      for="campo-nombre"
+                      >Nombre</label
+                    ><input
+                      id="campo-nombre"
+                      name="nombre"
+                      type="text"
+                      placeholder="Nombre"
+                      style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none;transition:border-color 0.2s"
+                    />
+                  </div>
+                  <div style="grid-column: auto">
+                    <label
+                      style="
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.12em;
+                        text-transform: uppercase;
+                        color: var(--muted);
+                        display: block;
+                        margin-bottom: 6px;
+                      "
+                      for="campo-apellido"
+                      >Apellido</label
+                    ><input
+                      id="campo-apellido"
+                      name="apellido"
+                      type="text"
+                      placeholder="Apellido"
+                      style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none;transition:border-color 0.2s"
+                    />
+                  </div>
+                  <div style="grid-column: auto">
+                    <label
+                      style="
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.12em;
+                        text-transform: uppercase;
+                        color: var(--muted);
+                        display: block;
+                        margin-bottom: 6px;
+                      "
+                      for="campo-email"
+                      >Email</label
+                    ><input
+                      id="campo-email"
+                      name="email"
+                      type="email"
+                      placeholder="Email"
+                      style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none;transition:border-color 0.2s"
+                    />
+                  </div>
+                  <div style="grid-column: auto">
+                    <label
+                      style="
+                        font-size: 10px;
+                        font-weight: 700;
+                        letter-spacing: 0.12em;
+                        text-transform: uppercase;
+                        color: var(--muted);
+                        display: block;
+                        margin-bottom: 6px;
+                      "
+                      for="campo-telefono"
+                      >Teléfono</label
+                    ><input
+                      id="campo-telefono"
+                      name="telefono"
+                      type="tel"
+                      placeholder="Teléfono"
+                      style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none;transition:border-color 0.2s"
+                    />
+                  </div>
+                </div>
+                <div style="margin-bottom: 16px">
+                  <label
+                    style="
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      display: block;
+                      margin-bottom: 6px;
+                    "
+                    for="campo-sede"
+                    >Sede de interés</label
+                  ><select
+                    id="campo-sede"
+                    name="sede"
+                    style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none"
+                  >
+                    <option>Sede Centro</option>
+                    <option>Sede Norte</option>
+                    <option>Sede Sur</option>
+                  </select>
+                </div>
+                <div style="margin-bottom: 24px">
+                  <label
+                    style="
+                      font-size: 10px;
+                      font-weight: 700;
+                      letter-spacing: 0.12em;
+                      text-transform: uppercase;
+                      color: var(--muted);
+                      display: block;
+                      margin-bottom: 6px;
+                    "
+                    for="campo-mensaje"
+                    >Mensaje</label
+                  ><textarea
+                    id="campo-mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Contanos tu objetivo..."
+                    style="width:100%;background:var(--black);border:1.5px solid var(--border);border-radius:2px;padding:12px 14px;color:var(--text);font-size:14px;font-family:&#x27;DM Sans&#x27;, sans-serif;outline:none;resize:vertical"
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  style="display:inline-flex;align-items:center;gap:8px;font-family:&#x27;Anton&#x27;, sans-serif;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;padding:14px 28px;border-radius:2px;transition:all 0.2s;background:var(--acid);color:var(--black);width:100%;justify-content:center"
+                >
+                  Enviar consulta
+                </button>
+                <p
+                  style="
+                    font-size: 11px;
+                    color: var(--muted);
+                    text-align: center;
+                    margin-top: 12px;
+                  "
+                >
+                  Tu información es confidencial y nunca la compartimos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <style>
+            @media (min-width: 768px) {
+              .contact-grid {
+                grid-template-columns: 1fr 1.4fr !important;
+                align-items: start;
+              }
+            }
+          </style>
+        </section>
+        <footer
+          style="
+            background: var(--black);
+            border-top: 1px solid var(--border);
+            padding: 60px 24px 32px;
+          "
+        >
+          <div style="max-width: 1100px; margin: 0 auto">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 48px;
+                flex-wrap: wrap;
+                gap: 20px;
+              "
+            >
+              <div style="display: flex; align-items: center; gap: 10px">
+                <div
+                  style="
+                    width: 34px;
+                    height: 34px;
+                    background: var(--acid);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <rect
+                      x="2"
+                      y="7"
+                      width="14"
+                      height="4"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                    <rect
+                      x="0"
+                      y="5"
+                      width="3"
+                      height="8"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                    <rect
+                      x="15"
+                      y="5"
+                      width="3"
+                      height="8"
+                      rx="1"
+                      fill="#080808"
+                    ></rect>
+                  </svg>
+                </div>
+                <span
+                  class="display"
+                  style="font-size: 22px; color: var(--text)"
+                  >FORJA<span style="color: var(--acid)">.</span></span
+                >
+              </div>
+              <div style="display: flex; gap: 8px">
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border: 1.5px solid var(--border);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: var(--muted);
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    text-decoration: none;
+                  "
+                  >IG</a
+                ><a
+                  href="#"
+                  aria-label="Facebook"
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border: 1.5px solid var(--border);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: var(--muted);
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    text-decoration: none;
+                  "
+                  >FB</a
+                ><a
+                  href="#"
+                  aria-label="YouTube"
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border: 1.5px solid var(--border);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: var(--muted);
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    text-decoration: none;
+                  "
+                  >YT</a
+                ><a
+                  href="#"
+                  aria-label="Twitter"
+                  style="
+                    width: 36px;
+                    height: 36px;
+                    border: 1.5px solid var(--border);
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: var(--muted);
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    text-decoration: none;
+                  "
+                  >TW</a
+                >
+              </div>
+            </div>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+                margin-bottom: 48px;
+              "
+              class="footer-cols"
+            >
+              <div>
+                <p
+                  style="
+                    font-size: 14px;
+                    color: var(--text-dim);
+                    line-height: 1.8;
+                    max-width: 280px;
+                  "
+                >
+                  Formamos atletas desde 2009. Tres sedes, más de 2.400 socios
+                  activos y un equipo que vive para el deporte.
+                </p>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: var(--muted);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Menú
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Nosotros</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Planes</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Clases</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Sedes</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Contacto</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: var(--muted);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Clases
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Funcional</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Spinning</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >CrossFit</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Yoga</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Boxing</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Pilates</a
+                  >
+                </div>
+              </div>
+              <div>
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: var(--muted);
+                    margin-bottom: 16px;
+                  "
+                >
+                  Legal
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Términos de uso</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Privacidad</a
+                  ><a
+                    href="#"
+                    style="
+                      font-size: 13px;
+                      color: var(--text-dim);
+                      text-decoration: none;
+                      transition: color 0.2s;
+                    "
+                    >Cookies</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                border-top: 1px solid var(--border);
+                padding-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 12px;
+              "
+            >
+              <span style="font-size: 12px; color: var(--muted)"
+                >© 2026 Forja Gym. Todos los derechos reservados.</span
+              ><span style="font-size: 12px; color: var(--muted)"
+                >Hecho con energía ⚡</span
+              >
+            </div>
+          </div>
+          <style>
+            @media (min-width: 640px) {
+              .footer-cols {
+                grid-template-columns: 2fr repeat(3, 1fr) !important;
+              }
+            }
+          </style>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("click", function (e) {
+        const hamburger = e.target.closest(".hamburger");
+        if (hamburger) {
+          const mobileMenu = document.querySelector(".mobile-menu");
+          if (mobileMenu) mobileMenu.classList.toggle("open");
+        }
+      });
+
+      const header = document.querySelector("header");
+      window.addEventListener("scroll", function () {
+        if (header) {
+          if (window.scrollY > 40) {
+            header.style.background = "rgba(8,8,8,0.95)";
+            header.style.backdropFilter = "blur(12px)";
+            header.style.borderBottom = "1px solid var(--border)";
+          } else {
+            header.style.background = "transparent";
+            header.style.backdropFilter = "none";
+            header.style.borderBottom = "none";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
