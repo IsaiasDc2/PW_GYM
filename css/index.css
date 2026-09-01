@@ -35,7 +35,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 3px;
 }
@@ -46,18 +45,18 @@ body {
   background: var(--border);
 }
 
-/* Anton display utility */
+
 .display {
   font-family: "Anton", sans-serif;
   letter-spacing: 0.01em;
 }
 
-/* Acid accent */
+
 .acid {
   color: var(--acid);
 }
 
-/* Section utility */
+
 .section-pad {
   padding: 80px 24px;
 }
@@ -68,7 +67,7 @@ body {
   }
 }
 
-/* Marquee */
+
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -86,7 +85,7 @@ body {
   animation-play-state: paused;
 }
 
-/* Fade-up entry (CSS only, no JS needed) */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -98,7 +97,7 @@ body {
   }
 }
 
-/* Card hover */
+
 .card-hover {
   transition:
     transform 0.25s ease,
@@ -109,13 +108,12 @@ body {
   border-color: var(--acid) !important;
 }
 
-/* Plan card highlight */
 .plan-featured {
   background: var(--acid) !important;
   color: var(--black) !important;
 }
 
-/* Diagonal divider */
+
 .diag-bottom {
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
   padding-bottom: 80px;
@@ -126,7 +124,7 @@ body {
   padding-top: 80px;
 }
 
-/* Progress bar animation */
+
 @keyframes grow {
   from {
     width: 0;
@@ -136,7 +134,7 @@ body {
   }
 }
 
-/* Image tint overlay */
+
 .img-tint::after {
   content: "";
   position: absolute;
@@ -149,7 +147,7 @@ body {
   pointer-events: none;
 }
 
-/* Tab active */
+
 .tab-btn {
   transition: all 0.2s;
 }
@@ -158,7 +156,7 @@ body {
   color: var(--black) !important;
 }
 
-/* Focus states */
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -166,7 +164,6 @@ select:focus {
   border-color: var(--acid) !important;
 }
 
-/* Noise texture overlay */
 .noise::before {
   content: "";
   position: absolute;
