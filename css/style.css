@@ -47,8 +47,7 @@ a { color: inherit; }
 .skip-link:focus { left: 0.5rem; top: 0.5rem; }
 
 .site-header {
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 50;
   background: rgba(8, 8, 8, 0.95);
   backdrop-filter: blur(12px);
@@ -161,9 +160,6 @@ a { color: inherit; }
 .btn-ghost:hover { border-color: var(--acid); color: var(--acid); }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
   margin-top: 1.5rem;
 }
 
@@ -183,13 +179,6 @@ a { color: inherit; }
 
 .section h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.05; margin: 0.5rem 0 1rem; }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 2rem;
-  align-items: start;
-}
-
 .checklist { list-style: none; padding: 0; margin: 1rem 0; }
 .checklist li { padding-left: 1.6rem; position: relative; margin: 0.4rem 0; }
 .checklist li::before { content: "✓"; position: absolute; left: 0; color: var(--acid); font-weight: 900; }
@@ -205,24 +194,13 @@ a { color: inherit; }
 .small { font-size: 0.85rem; }
 
 .plans, .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
   margin-top: 1.5rem;
 }
-
-.cards-grid { grid-template-columns: repeat(2, 1fr); }
 
 .card.featured { border-color: var(--acid); }
 .card h3 { margin-top: 0; }
 
 .form { display: grid; gap: 1rem; }
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
 
 .field { display: grid; gap: 0.35rem; }
 
@@ -263,12 +241,6 @@ code { background: #000; border: 1px solid var(--border); padding: 0.1rem 0.35re
 
 .site-footer { padding: 2rem 0 1rem; border-top: 1px solid var(--border); }
 
-.footer-inner {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 1.5rem;
-}
-
 .footer-inner nav { display: grid; gap: 0.4rem; }
 .footer-inner nav a, .social a { color: var(--text-dim); text-decoration: none; }
 .footer-inner nav a:hover, .social a:hover { color: var(--acid); }
@@ -277,17 +249,8 @@ code { background: #000; border: 1px solid var(--border); padding: 0.1rem 0.35re
 .footer-bottom { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1rem; }
 .footer-bottom p { color: var(--muted); font-size: 0.85rem; margin: 0; }
 
-@media (max-width: 900px) {
-  .grid-2 { grid-template-columns: 1fr; }
-  .plans { grid-template-columns: 1fr; }
-  .cards-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-}
-
 @media (max-width: 640px) {
   .main-nav { display: none; }
   .header-inner .btn { display: none; }
   .hamburger { display: block; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-inner { grid-template-columns: 1fr; }
 }

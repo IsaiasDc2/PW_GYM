@@ -116,7 +116,7 @@ Ver enlace de Figma en la sección del TP N°3 de este README.
 
 ### Tecnologías utilizadas
 
-HTML5, CSS3, JavaScript, PHP 8.x, servidor local (XAMPP/Laragon o `php -S`).
+HTML5, CSS3, Bootstrap 5.3 (autohospedado en `css/` y `js/`, sin dependencia de CDN), JavaScript, PHP 8.x, servidor local (XAMPP/Laragon o `php -S`). Las grillas usan el sistema responsive de Bootstrap (`container`, `row`, `col-md-*`, `col-lg-*`) con los estilos personalizados del tema oscuro.
 
 ### Instalación y ejecución local
 

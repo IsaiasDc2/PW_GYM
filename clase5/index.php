@@ -46,18 +46,19 @@ require __DIR__ . '/includes/header.php';
         <div class="hero-actions">
             <a class="btn btn-primary" href="#contacto">Ir al formulario POST</a>
         </div>
-        <div class="stats" aria-hidden="true">
-            <div><strong>2.400+</strong><span>Socios activos</span></div>
-            <div><strong>3</strong><span>Sedes</span></div>
-            <div><strong>15</strong><span>Años</span></div>
-            <div><strong>40+</strong><span>Instructores</span></div>
+        <div class="stats row g-3" aria-hidden="true">
+            <div class="col-6 col-md-3"><strong>2.400+</strong><span>Socios activos</span></div>
+            <div class="col-6 col-md-3"><strong>3</strong><span>Sedes</span></div>
+            <div class="col-6 col-md-3"><strong>15</strong><span>Años</span></div>
+            <div class="col-6 col-md-3"><strong>40+</strong><span>Instructores</span></div>
         </div>
     </div>
 </section>
 
 <section id="nosotros" class="section">
-    <div class="container grid-2">
-        <div>
+    <div class="container">
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
             <span class="kicker">Sobre Nosotros</span>
             <h2>NO SOMOS<br>UN GIMNASIO<br>MÁS.</h2>
             <p>Fundado en 2009, Forja rompe las barreras entre el fitness de élite y el acceso real. Resultados medibles, mes a mes.</p>
@@ -68,10 +69,13 @@ require __DIR__ . '/includes/header.php';
                 <li>Resultados comprobados</li>
             </ul>
         </div>
+        <div class="col-lg-6">
         <div class="card">
             <p><strong>98%</strong> tasa de retención.</p>
             <p class="muted">Cada instructor tiene certificación internacional. Cada plan se diseña según tu cuerpo, objetivo y tiempo.</p>
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
@@ -80,10 +84,10 @@ require __DIR__ . '/includes/header.php';
         <span class="kicker">Planes y Precios</span>
         <h2>ELEGÍ TU NIVEL.</h2>
         <p class="muted">Sin permanencia. Podés cambiar de plan cuando quieras.</p>
-        <div class="plans">
-            <article class="card"><h3>BÁSICO — $18.900/mes</h3><p class="muted">Sala de pesas, vestuarios premium, app, 1 clase/semana.</p></article>
-            <article class="card featured"><h3>PRO — $29.900/mes</h3><p class="muted">Clases ilimitadas, 1 sesión PT/mes, nutrición, 3 sedes.</p></article>
-            <article class="card"><h3>ELITE — $44.900/mes</h3><p class="muted">4 PT/mes, plan nutricional, wearables, prioridad.</p></article>
+        <div class="plans row g-3">
+            <div class="col-md-4"><article class="card"><h3>BÁSICO — $18.900/mes</h3><p class="muted">Sala de pesas, vestuarios premium, app, 1 clase/semana.</p></article></div>
+            <div class="col-md-4"><article class="card featured"><h3>PRO — $29.900/mes</h3><p class="muted">Clases ilimitadas, 1 sesión PT/mes, nutrición, 3 sedes.</p></article></div>
+            <div class="col-md-4"><article class="card"><h3>ELITE — $44.900/mes</h3><p class="muted">4 PT/mes, plan nutricional, wearables, prioridad.</p></article></div>
         </div>
     </div>
 </section>
@@ -95,12 +99,12 @@ require __DIR__ . '/includes/header.php';
         <p class="muted">Este formulario usa <code>method="get"</code>: ideal para búsquedas y filtros (los parámetros viajan en la URL y se pueden compartir). Todo lo recibido por <code>$_GET</code> se sanitiza antes de mostrarse.</p>
 
         <form class="card form" method="get" action="index.php#clases" role="search">
-            <div class="form-row">
-                <div class="field">
+            <div class="row g-3">
+                <div class="field col-md-6">
                     <label for="q">Buscar (nombre, instructor, horario)</label>
                     <input type="text" id="q" name="q" maxlength="80" placeholder="Ej: yoga, lunes, Lucía…" value="<?php echo e($q); ?>">
                 </div>
-                <div class="field">
+                <div class="field col-md-6">
                     <label for="cat">Categoría</label>
                     <select id="cat" name="cat">
                         <option value="">Todas</option>
@@ -133,14 +137,14 @@ require __DIR__ . '/includes/header.php';
         <?php if (empty($resultados)): ?>
             <p class="notice notice-error" role="alert">Sin resultados. Probá con otra palabra o categoría.</p>
         <?php else: ?>
-            <div class="cards-grid">
+            <div class="cards-grid row g-3">
                 <?php foreach ($resultados as $clase): ?>
-                    <article class="card">
+                    <div class="col-md-6"><article class="card h-100">
                         <h3><?php echo e($clase['nombre']); ?></h3>
                         <p><strong>Categoría:</strong> <?php echo e($clase['categoria']); ?></p>
                         <p><strong>Horario:</strong> <?php echo e($clase['horario']); ?></p>
                         <p class="muted">Instructor: <?php echo e($clase['instructor']); ?></p>
-                    </article>
+                    </article></div>
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
@@ -148,9 +152,10 @@ require __DIR__ . '/includes/header.php';
 </section>
 
 <section id="contacto" class="section section-alt">
-    <div class="container grid-2">
-        <div>
-            <span class="kicker">Contacto · Formulario </span>
+    <div class="container">
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+            <span class="kicker">Contacto · Formulario POST</span>
             <h2>EMPEZÁ HOY.</h2>
             <p class="muted">Este formulario usa <code>method="post"</code>: los datos viajan en el cuerpo de la petición (adecuado para registro/contacto). Se valida en servidor con <code>isset()</code>, <code>empty()</code>, <code>filter_var()</code> y se escapa con <code>htmlspecialchars()</code> + <code>trim()</code>.</p>
             <ul class="checklist">
@@ -160,6 +165,7 @@ require __DIR__ . '/includes/header.php';
                 <li>Si hay errores, se conservan tus datos</li>
             </ul>
         </div>
+        <div class="col-lg-6">
         <div class="card">
             <?php if ($exito_post !== null): ?>
                 <p class="notice notice-success" role="status"><?php echo e($exito_post); ?></p>
@@ -177,25 +183,25 @@ require __DIR__ . '/includes/header.php';
             <?php endif; ?>
 
             <form class="form" method="post" action="index.php#contacto" novalidate>
-                <div class="form-row">
-                    <div class="field">
+                <div class="row g-3">
+                    <div class="field col-md-6">
                         <label for="nombre">Nombre *</label>
                         <input type="text" id="nombre" name="nombre" maxlength="50" required value="<?php echo e($valores_post['nombre']); ?>">
                         <?php if (isset($errores_post['nombre'])): ?><small class="field-error"><?php echo e($errores_post['nombre']); ?></small><?php endif; ?>
                     </div>
-                    <div class="field">
+                    <div class="field col-md-6">
                         <label for="apellido">Apellido *</label>
                         <input type="text" id="apellido" name="apellido" maxlength="50" required value="<?php echo e($valores_post['apellido']); ?>">
                         <?php if (isset($errores_post['apellido'])): ?><small class="field-error"><?php echo e($errores_post['apellido']); ?></small><?php endif; ?>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="field">
+                <div class="row g-3">
+                    <div class="field col-md-6">
                         <label for="email">Email *</label>
                         <input type="email" id="email" name="email" maxlength="120" required value="<?php echo e($valores_post['email']); ?>">
                         <?php if (isset($errores_post['email'])): ?><small class="field-error"><?php echo e($errores_post['email']); ?></small><?php endif; ?>
                     </div>
-                    <div class="field">
+                    <div class="field col-md-6">
                         <label for="telefono">Teléfono (opcional)</label>
                         <input type="tel" id="telefono" name="telefono" maxlength="20" placeholder="+54 11 1234 5678" value="<?php echo e($valores_post['telefono']); ?>">
                         <?php if (isset($errores_post['telefono'])): ?><small class="field-error"><?php echo e($errores_post['telefono']); ?></small><?php endif; ?>
@@ -221,6 +227,8 @@ require __DIR__ . '/includes/header.php';
                 </div>
             </form>
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
