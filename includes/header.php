@@ -14,6 +14,7 @@ if (!isset($pagina_activa)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Forja Gym: entrenamiento de fuerza, clases grupales, nutrición y comunidad.">
     <title><?php echo htmlspecialchars($titulo_pagina, ENT_QUOTES, 'UTF-8'); ?></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>

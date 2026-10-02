@@ -1,18 +1,18 @@
     </main>
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>
+        <div class="container footer-inner row g-4">
+            <div class="col-md-4">
                 <strong class="brand">FORJA<span class="brand-dot">.</span></strong>
                 <p class="muted">Entrenamiento. Disciplina. Resultados.</p>
                 <p class="muted small">TP5 · Programación Web · Procesamiento de formularios y seguridad (XSS).</p>
             </div>
-            <nav aria-label="Navegación de pie">
+            <nav class="col-md-4" aria-label="Navegación de pie">
                 <a href="index.php#nosotros">Nosotros</a>
                 <a href="index.php#planes">Planes</a>
                 <a href="index.php#clases">Clases</a>
                 <a href="index.php#contacto">Contacto</a>
             </nav>
-            <div class="social">
+            <div class="social col-md-4">
                 <a href="#" aria-label="Instagram">Instagram</a>
                 <a href="#" aria-label="Facebook">Facebook</a>
                 <a href="#" aria-label="WhatsApp">WhatsApp</a>
@@ -22,6 +22,7 @@
             <p>© 2026 Forja Gym. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
