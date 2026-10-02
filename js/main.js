@@ -6,6 +6,16 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const filtro = document.getElementById("filtro");
+if (filtro) {
+  filtro.addEventListener("change", function () {
+    const valor = filtro.value;
+    document.querySelectorAll("[data-categoria]").forEach(function (el) {
+      el.style.display = valor === "" || el.getAttribute("data-categoria") === valor ? "" : "none";
+    });
+  });
+}
+
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
   if (header) {

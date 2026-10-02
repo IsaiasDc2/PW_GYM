@@ -28,14 +28,14 @@ require_once 'includes/header.php';
             </div>
         </div>
         <div class="cards-grid row g-3">
-            <div class="col-md-6"><article class="card h-100"><h3>Funcional AM</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Lunes 09:00</p><p class="muted">Instructor: Lucía Gómez</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>Funcional PM</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Martes 18:00</p><p class="muted">Instructor: Marco Ruiz</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>WOD CrossFit</h3><p><strong>Categoría:</strong> CrossFit</p><p><strong>Horario:</strong> Miércoles 19:00</p><p class="muted">Instructor: Diego Torres</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>Spinning Night</h3><p><strong>Categoría:</strong> Spinning</p><p><strong>Horario:</strong> Jueves 18:30</p><p class="muted">Instructor: Carla Méndez</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>Yoga Flow</h3><p><strong>Categoría:</strong> Yoga</p><p><strong>Horario:</strong> Viernes 08:00</p><p class="muted">Instructor: Ana Sosa</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>Boxing Fit</h3><p><strong>Categoría:</strong> Boxing</p><p><strong>Horario:</strong> Lunes 20:00</p><p class="muted">Instructor: Pablo Ríos</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>Pilates Core</h3><p><strong>Categoría:</strong> Pilates</p><p><strong>Horario:</strong> Miércoles 10:00</p><p class="muted">Instructor: Sofía Díaz</p></article></div>
-            <div class="col-md-6"><article class="card h-100"><h3>HIIT Express</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Sábado 10:00</p><p class="muted">Instructor: Marco Ruiz</p></article></div>
+            <div class="col-md-6" data-categoria="Funcional"><article class="card h-100"><h3>Funcional AM</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Lunes 09:00</p><p class="muted">Instructor: Lucía Gómez</p></article></div>
+            <div class="col-md-6" data-categoria="Funcional"><article class="card h-100"><h3>Funcional PM</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Martes 18:00</p><p class="muted">Instructor: Marco Ruiz</p></article></div>
+            <div class="col-md-6" data-categoria="CrossFit"><article class="card h-100"><h3>WOD CrossFit</h3><p><strong>Categoría:</strong> CrossFit</p><p><strong>Horario:</strong> Miércoles 19:00</p><p class="muted">Instructor: Diego Torres</p></article></div>
+            <div class="col-md-6" data-categoria="Spinning"><article class="card h-100"><h3>Spinning Night</h3><p><strong>Categoría:</strong> Spinning</p><p><strong>Horario:</strong> Jueves 18:30</p><p class="muted">Instructor: Carla Méndez</p></article></div>
+            <div class="col-md-6" data-categoria="Yoga"><article class="card h-100"><h3>Yoga Flow</h3><p><strong>Categoría:</strong> Yoga</p><p><strong>Horario:</strong> Viernes 08:00</p><p class="muted">Instructor: Ana Sosa</p></article></div>
+            <div class="col-md-6" data-categoria="Boxing"><article class="card h-100"><h3>Boxing Fit</h3><p><strong>Categoría:</strong> Boxing</p><p><strong>Horario:</strong> Lunes 20:00</p><p class="muted">Instructor: Pablo Ríos</p></article></div>
+            <div class="col-md-6" data-categoria="Pilates"><article class="card h-100"><h3>Pilates Core</h3><p><strong>Categoría:</strong> Pilates</p><p><strong>Horario:</strong> Miércoles 10:00</p><p class="muted">Instructor: Sofía Díaz</p></article></div>
+            <div class="col-md-6" data-categoria="Funcional"><article class="card h-100"><h3>HIIT Express</h3><p><strong>Categoría:</strong> Funcional</p><p><strong>Horario:</strong> Sábado 10:00</p><p class="muted">Instructor: Marco Ruiz</p></article></div>
         </div>
     </div>
 </section>

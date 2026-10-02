@@ -34,17 +34,17 @@ if ($cat !== '' && !in_array($cat, categorias_validas(), true)) {
 $hubo_busqueda = isset($_GET['q']) || isset($_GET['cat']);
 $resultados = filtrar_clases($clases, $q, $cat);
 
-$titulo_pagina = 'Forja Gym · Contacto y Clases (TP5)';
+$titulo_pagina = 'Forja Gym · Contacto y Clases';
 require __DIR__ . '/includes/header.php';
 ?>
 
 <section class="hero">
     <div class="container">
-        <span class="kicker">PW_GYM</span>
+        <span class="kicker">El gimnasio que te transforma</span>
         <h1>FORJÁ<br>TU MEJOR<br>VERSIÓN</h1>
-        <p class="lead">Contacto por <strong>POST</strong> y buscador de clases por <strong>GET</strong>, con sanitización estricta anti-XSS.</p>
+        <p class="lead">Escribinos por el formulario o encontrá tu próxima clase con el buscador.</p>
         <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacto">Ir al formulario POST</a>
+            <a class="btn btn-primary" href="#contacto">Ir al formulario</a>
         </div>
         <div class="stats row g-3" aria-hidden="true">
             <div class="col-6 col-md-3"><strong>2.400+</strong><span>Socios activos</span></div>
@@ -94,9 +94,9 @@ require __DIR__ . '/includes/header.php';
 
 <section id="clases" class="section">
     <div class="container">
-        <span class="kicker">Clases y Horarios · Formulario GET</span>
+        <span class="kicker">Clases y Horarios</span>
         <h2>ENCONTRÁ TU CLASE.</h2>
-        <p class="muted">Este formulario usa <code>method="get"</code>: ideal para búsquedas y filtros (los parámetros viajan en la URL y se pueden compartir). Todo lo recibido por <code>$_GET</code> se sanitiza antes de mostrarse.</p>
+        <p class="muted">Buscá por nombre, instructor u horario, o filtrá por categoría.</p>
 
         <form class="card form" method="get" action="index.php#clases" role="search">
             <div class="row g-3">
@@ -127,7 +127,6 @@ require __DIR__ . '/includes/header.php';
                     <?php if ($q !== ''): ?>“<strong><?php echo e($q); ?></strong>”<?php endif; ?>
                     <?php if ($cat !== ''): ?>en categoría <strong><?php echo e($cat); ?></strong><?php endif; ?>:
                     <strong><?php echo count($resultados); ?></strong> encontrada(s).
-                    <span class="muted small">Probá XSS: <code>&lt;script&gt;alert(1)&lt;/script&gt;</code> — se muestra escapado, no se ejecuta.</span>
                 <?php else: ?>
                     Mostrando las <strong><?php echo count($resultados); ?></strong> clases disponibles.
                 <?php endif; ?>
@@ -155,14 +154,13 @@ require __DIR__ . '/includes/header.php';
     <div class="container">
     <div class="row g-4 align-items-start">
         <div class="col-lg-6">
-            <span class="kicker">Contacto · Formulario POST</span>
+            <span class="kicker">Contacto</span>
             <h2>EMPEZÁ HOY.</h2>
-            <p class="muted">Este formulario usa <code>method="post"</code>: los datos viajan en el cuerpo de la petición (adecuado para registro/contacto). Se valida en servidor con <code>isset()</code>, <code>empty()</code>, <code>filter_var()</code> y se escapa con <code>htmlspecialchars()</code> + <code>trim()</code>.</p>
+            <p class="muted">Completá tus datos y te respondemos a la brevedad.</p>
             <ul class="checklist">
-                <li>Campos requeridos validados en servidor</li>
-                <li>Email con formato verificado</li>
-                <li>Sede contra lista blanca</li>
-                <li>Si hay errores, se conservan tus datos</li>
+                <li>Respuesta en menos de 24 hs</li>
+                <li>Asesoramiento sin cargo</li>
+                <li>Elegí tu sede más cercana</li>
             </ul>
         </div>
         <div class="col-lg-6">

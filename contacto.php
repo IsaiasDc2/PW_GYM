@@ -19,8 +19,8 @@ require_once 'includes/header.php';
             <h3>Escribinos</h3>
             <p class="muted">Email de soporte:</p>
             <p><a class="btn btn-ghost" href="mailto:<?php echo htmlspecialchars(SOPORTE_EMAIL, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars(SOPORTE_EMAIL, ENT_QUOTES, 'UTF-8'); ?></a></p>
-            <p class="muted">Formulario con validación y persistencia del lado del servidor:</p>
-            <p><a class="btn btn-primary" href="clase5/index.php#contacto">Ir al formulario POST</a></p>
+            <p class="muted">Dejanos tu consulta y te contactamos:</p>
+            <p><a class="btn btn-primary" href="clase5/index.php#contacto">Ir al formulario</a></p>
             </div>
         </div>
         <div class="col-lg-6">
