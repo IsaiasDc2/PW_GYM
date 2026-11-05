@@ -40,7 +40,7 @@ require_once 'includes/header.php';
     </div>
 </section>
 
-<section class="section" id="buscador-clases" data-api-clases data-endpoint="api/clases.php">
+<section class="section" id="buscador-clases" data-api-clases data-endpoint="api/buscar_productos.php">
     <div class="container">
         <span class="kicker">Búsqueda en tiempo real</span>
         <h2>ENCONTRÁ TU CLASE<br>AL INSTANTE.</h2>
@@ -79,5 +79,5 @@ require_once 'includes/header.php';
         </div>
     </div>
 </section>
-<script src="js/clases-api.js"></script>
+<script src="js/app.js"></script>
 <?php require_once 'includes/footer.php'; ?>

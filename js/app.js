@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectCategoria = document.getElementById("api-categoria");
   const estado = document.getElementById("api-estado");
   const resultados = document.getElementById("api-resultados");
-  const endpoint = seccion.getAttribute("data-endpoint") || "api/clases.php";
+  const endpoint = seccion.getAttribute("data-endpoint") || "api/buscar_productos.php";
 
   if (!inputBusqueda || !selectCategoria || !estado || !resultados) return;
 
