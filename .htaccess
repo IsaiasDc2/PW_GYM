@@ -7,3 +7,12 @@ Options -Indexes
 <IfModule mod_headers.c>
     Header always set X-Content-Type-Options "nosniff"
 </IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Código interno del MVC nativo y del proyecto Laravel.
+    RewriteRule ^app(/|$) - [F,L]
+    RewriteRule ^tp10-laravel/?$ - [F,L]
+    RewriteRule ^tp10-laravel/(?!public/).* - [F,L]
+</IfModule>

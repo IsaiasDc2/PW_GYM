@@ -1,10 +1,10 @@
 <?php
-$select = function (string $campo, string $etiqueta, array $opciones) use ($datos, $errores) {
+$select = function (string $campo, string $etiqueta, array $opciones) use ($datos, $errores): void {
     echo '<div class="field col-md-6"><label for="' . e($campo) . '">' . e($etiqueta) . '</label>';
     echo '<select id="' . e($campo) . '" name="' . e($campo) . '" required><option value="">Seleccionar...</option>';
-    foreach ($opciones as $op) {
-        $sel = (string) $op['id'] === (string) $datos[$campo] ? ' selected' : '';
-        echo '<option value="' . e($op['id']) . '"' . $sel . '>' . e($op['nombre']) . '</option>';
+    foreach ($opciones as $opcion) {
+        $seleccionado = (string) $opcion['id'] === (string) $datos[$campo] ? ' selected' : '';
+        echo '<option value="' . e($opcion['id']) . '"' . $seleccionado . '>' . e($opcion['nombre']) . '</option>';
     }
     echo '</select>';
     if (isset($errores[$campo])) {
@@ -33,7 +33,7 @@ $select = function (string $campo, string $etiqueta, array $opciones) use ($dato
             <label for="dia_semana">Día</label>
             <select id="dia_semana" name="dia_semana" required>
                 <option value="">Seleccionar...</option>
-                <?php foreach (DIAS_SEMANA as $dia): ?>
+                <?php foreach ($dias as $dia): ?>
                     <option value="<?php echo e($dia); ?>"<?php echo $datos['dia_semana'] === $dia ? ' selected' : ''; ?>><?php echo e($dia); ?></option>
                 <?php endforeach; ?>
             </select>

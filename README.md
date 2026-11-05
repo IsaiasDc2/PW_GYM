@@ -13,6 +13,7 @@
 | TP 7 | CRUD con PDO y MySQL | [Trabajo Practico 7](Trabajo%20Practico%207/README.md) |
 | TP 8 | Sesiones, registro, login y roles | [Trabajo Practico 8](Trabajo%20Practico%208/README.md) |
 | TP 9 | Comunicación asincrónica con Fetch API, JSON y PDO | [Trabajo Practico 9](Trabajo%20Practico%209/README.md) |
+| TP 10 | Refactorización a MVC e implementación con Laravel | [Trabajo Practico 10](Trabajo%20Practico%2010/README.md) |
 
 Cada carpeta contiene una tabla que relaciona lo que pide la consigna con la evidencia en el repositorio.
 
@@ -102,12 +103,15 @@ PW_GYM/
 ├── Trabajo Practico 7/   # documentación del CRUD (código en admin/)
 ├── Trabajo Practico 8/   # documentación de sesiones y login
 ├── Trabajo Practico 9/   # documentación de Fetch API, JSON y endpoint (código en api/ y js/)
+├── Trabajo Practico 10/  # documentación de MVC nativo y módulo Laravel
 │
 ├── index.html ... contacto.html   # TP3: 10 vistas estáticas (GitHub Pages)
 ├── index.php, clases.php, contacto.php, registro.php, login.php, logout.php,
 │   dashboard.php, admin_panel.php   # aplicación PHP (TP4, TP8)
-├── admin/                # CRUD de clases (TP7)
+├── app/                  # MVC nativo: Models, Views y Controllers (TP10)
+├── admin/                # CRUD de clases (TP7) refactorizado a MVC (TP10)
 ├── api/                  # endpoint JSON de clases (TP9)
+├── tp10-laravel/         # módulo Sedes con Laravel 13, Eloquent y Blade (TP10)
 ├── includes/, config/    # plantillas SSI, conexión PDO, auth y guardián
 ├── tools/                # crear_admin.php
 ├── css/, js/, img/       # js/clases-api.js: búsqueda asincrónica (TP9)
