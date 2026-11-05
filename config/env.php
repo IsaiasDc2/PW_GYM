@@ -17,10 +17,15 @@ if (is_readable($ruta)) {
     }
 }
 if (!defined('APP_ENV')) {
-    define('APP_ENV', $_ENV['APP_ENV'] ?? 'local');
+    define('APP_ENV', $_ENV['APP_ENV'] ?? 'production');
 }
 if (!defined('SITIO_NOMBRE')) {
     define('SITIO_NOMBRE', $_ENV['SITIO_NOMBRE'] ?? 'Forja Gym');
+}
+foreach (['DB_HOST' => 'localhost', 'DB_PORT' => '3306', 'DB_NAME' => 'forja_gym', 'DB_USER' => 'root', 'DB_PASS' => ''] as $clave => $defecto) {
+    if (!defined($clave)) {
+        define($clave, $_ENV[$clave] ?? $defecto);
+    }
 }
 if (!defined('SOPORTE_EMAIL')) {
     define('SOPORTE_EMAIL', $_ENV['SOPORTE_EMAIL'] ?? 'contacto@forjagym.com.ar');

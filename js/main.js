@@ -2,8 +2,16 @@ document.addEventListener("click", function (e) {
   const hamburger = e.target.closest(".hamburger");
   if (hamburger) {
     const mobileMenu = document.querySelector(".mobile-menu");
-    if (mobileMenu) mobileMenu.classList.toggle("open");
+    if (mobileMenu) {
+      const abierto = mobileMenu.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", abierto ? "true" : "false");
+    }
   }
+});
+
+document.addEventListener("submit", function (e) {
+  const mensaje = e.target.getAttribute("data-confirm");
+  if (mensaje && !window.confirm(mensaje)) e.preventDefault();
 });
 
 const filtro = document.getElementById("filtro");

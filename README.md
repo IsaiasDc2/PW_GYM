@@ -1,5 +1,21 @@
 # TP N°3 - Sitio Web de un Gimnasio 🏋️
 
+## Índice por Trabajo Práctico
+
+| TP | Tema | Carpeta |
+|---|---|---|
+| TP 1 | Planificación: intereses, referencias, bocetos, mapa del sitio | [Trabajo Practico 1](Trabajo%20Practico%201/README.md) |
+| TP 2 | Mockups en Figma | [Trabajo Practico 2](Trabajo%20Practico%202/README.md) |
+| TP 3 | Maquetación HTML5, Bootstrap, Lighthouse, GitHub Pages | [Trabajo Practico 3](Trabajo%20Practico%203/README.md) |
+| TP 4 | Migración a PHP, SSI y SSR | [Trabajo Practico 4](Trabajo%20Practico%204/README.md) |
+| TP 5 | Formularios y seguridad web | [Trabajo Practico 5](Trabajo%20Practico%205/README.md) |
+| TP 6 | Normalización y scripts SQL | [Trabajo Practico 6](Trabajo%20Practico%206/README.md) |
+| TP 7 | CRUD con PDO y MySQL | [Trabajo Practico 7](Trabajo%20Practico%207/README.md) |
+| TP 8 | Sesiones, registro, login y roles | [Trabajo Practico 8](Trabajo%20Practico%208/README.md) |
+| TP 9 | Comunicación asincrónica con Fetch API, JSON y PDO | [Trabajo Practico 9](Trabajo%20Practico%209/README.md) |
+
+Cada carpeta contiene una tabla que relaciona lo que pide la consigna con la evidencia en el repositorio.
+
 Acá está toda la documentación del proceso de diseño de un sitio web para un gimnasio: desde la elección del tema hasta el mapa del sitio.
 
 ## 1. Intereses personales
@@ -22,7 +38,7 @@ Elegí como tema el diseño de un sitio web para un gimnasio, ya que combina dir
 
 ## 4. Wireframes a mano
 
-Bocetos en papel de las secciones principales del sitio (header, hero, planes, clases, instructores, galería, nutrición, progreso/tecnología, comunidad, sedes, contacto, footer). Fotos disponibles en la carpeta `bocetos/`.
+Bocetos en papel de las secciones principales del sitio (header, hero, planes, clases, instructores, galería, nutrición, progreso/tecnología, comunidad, sedes, contacto, footer). Fotos disponibles en [`Trabajo Practico 1/bocetos/`](Trabajo%20Practico%201/bocetos/).
 
 ## 5. Mapa del sitio
 
@@ -77,29 +93,27 @@ https://www.figma.com/make/ra0LV4WcUW1xd2dN0y07hx/Wireframe-landing-page-gimnasi
 ```
 PW_GYM/
 ├── README.md
-├── index.html
-├── index.css
-├── documentacion.md
-├── bocetos/
-│    └──Foto
-├── figma/
-│    └──Fotos
-├── mapa_del_sitio/
-├── css/
-│    └──index.css
-├── img/
-├── js/
-└── clase5/                  # TP5 - Formularios y Seguridad Web
-     ├── index.php           # Front: procesa POST (contacto) + GET (buscador)
-     ├── includes/
-     │    ├── header.php     # SSI: <head> + header/nav (require)
-     │    ├── footer.php     # SSI: footer + cierre (require)
-     │    ├── functions.php  # Sanitización + validación anti-XSS
-     │    └── data.php       # Datos de clases para el filtro GET
-     ├── css/
-     │    └── style.css      # Responsive (mobile-first)
-     └── js/
-          └── main.js        # Menú móvil
+├── Trabajo Practico 1/   # intereses, referencias, bocetos/ y mapa_del_sitio/
+├── Trabajo Practico 2/   # mockups: figma/
+├── Trabajo Practico 3/   # documentación de maquetación y Lighthouse
+├── Trabajo Practico 4/   # documentación SSI/SSR y capturas/
+├── Trabajo Practico 5/   # documentación de formularios (código en clase5/)
+├── Trabajo Practico 6/   # schema.sql, consultas.sql y NORMALIZACION.md
+├── Trabajo Practico 7/   # documentación del CRUD (código en admin/)
+├── Trabajo Practico 8/   # documentación de sesiones y login
+├── Trabajo Practico 9/   # documentación de Fetch API, JSON y endpoint (código en api/ y js/)
+│
+├── index.html ... contacto.html   # TP3: 10 vistas estáticas (GitHub Pages)
+├── index.php, clases.php, contacto.php, registro.php, login.php, logout.php,
+│   dashboard.php, admin_panel.php   # aplicación PHP (TP4, TP8)
+├── admin/                # CRUD de clases (TP7)
+├── api/                  # endpoint JSON de clases (TP9)
+├── includes/, config/    # plantillas SSI, conexión PDO, auth y guardián
+├── tools/                # crear_admin.php
+├── css/, js/, img/       # js/clases-api.js: búsqueda asincrónica (TP9)
+├── clase5/               # TP5: carpeta de entrega con ese nombre exacto
+├── .env.example
+└── .gitignore
 ```
 
 ---
@@ -124,7 +138,7 @@ HTML5, CSS3, Bootstrap 5.3 (autohospedado en `css/` y `js/`, sin dependencia de 
 git clone https://github.com/IsaiasDc2/PW_GYM.git
 cd PW_GYM
 copy .env.example .env
-php -S localhost:8000
+php -S localhost:8000 router.php
 # Abrir: http://localhost:8000/index.php
 ```
 
@@ -134,11 +148,11 @@ En XAMPP/Laragon: copiar el proyecto a `htdocs` (o `www`) y abrir `http://localh
 
 | Evidencia | Captura |
 |---|---|
-| Servidor local corriendo (`http://localhost/...`) | ![localhost](screenshots/tp4/01-localhost-index.png) |
-| Navegación con ítem activo (Clases) | ![clases](screenshots/tp4/02-navegacion-clases.png) |
-| Vista de contacto con email de entorno | ![contacto](screenshots/tp4/03-contacto.png) |
-| Estructura modular SSI (`header.php`, `nav.php`, `footer.php`) | ![ssi](screenshots/tp4/04-ssi-modular.png) |
-| Variables de entorno (`.env.example`) | ![env](screenshots/tp4/05-env-example.png) |
+| Servidor local corriendo (`http://localhost/...`) | ![localhost](Trabajo%20Practico%204/capturas/01-localhost-index.png) |
+| Navegación con ítem activo (Clases) | ![clases](Trabajo%20Practico%204/capturas/02-navegacion-clases.png) |
+| Vista de contacto con email de entorno | ![contacto](Trabajo%20Practico%204/capturas/03-contacto.png) |
+| Estructura modular SSI (`header.php`, `nav.php`, `footer.php`) | ![ssi](Trabajo%20Practico%204/capturas/04-ssi-modular.png) |
+| Variables de entorno (`.env.example`) | ![env](Trabajo%20Practico%204/capturas/05-env-example.png) |
 
 Títulos dinámicos verificados por vista:
 

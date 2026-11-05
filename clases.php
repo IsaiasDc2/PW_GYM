@@ -40,6 +40,34 @@ require_once 'includes/header.php';
     </div>
 </section>
 
+<section class="section" id="buscador-clases" data-api-clases data-endpoint="api/clases.php">
+    <div class="container">
+        <span class="kicker">Búsqueda en tiempo real</span>
+        <h2>ENCONTRÁ TU CLASE<br>AL INSTANTE.</h2>
+        <p class="muted">Los resultados se consultan a la base de datos con Fetch API y se actualizan sin recargar la página.</p>
+        <div class="row g-3 mt-1">
+            <div class="field col-12 col-md-7">
+                <label for="api-busqueda">Buscar por clase, instructor o sede</label>
+                <input type="search" id="api-busqueda" name="q" placeholder="Ej.: yoga, Ana, Centro" autocomplete="off">
+            </div>
+            <div class="field col-12 col-md-5">
+                <label for="api-categoria">Categoría</label>
+                <select id="api-categoria" name="categoria">
+                    <option value="">Todas</option>
+                    <option value="Funcional">Funcional</option>
+                    <option value="Spinning">Spinning</option>
+                    <option value="CrossFit">CrossFit</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Boxing">Boxing</option>
+                    <option value="Pilates">Pilates</option>
+                </select>
+            </div>
+        </div>
+        <p id="api-estado" class="muted small mt-3" role="status" aria-live="polite">Cargando clases...</p>
+        <div id="api-resultados" class="cards-grid row g-3" aria-live="polite"></div>
+    </div>
+</section>
+
 <section class="section section-alt">
     <div class="container">
         <span class="kicker">Nuestras Sedes</span>
@@ -51,4 +79,5 @@ require_once 'includes/header.php';
         </div>
     </div>
 </section>
+<script src="js/clases-api.js"></script>
 <?php require_once 'includes/footer.php'; ?>
