@@ -114,7 +114,7 @@ PW_GYM/
 ├── tp10-laravel/         # módulo Sedes con Laravel 13, Eloquent y Blade (TP10)
 ├── includes/, config/    # plantillas SSI, conexión PDO, auth y guardián
 ├── tools/                # crear_admin.php
-├── css/, js/, img/       # js/clases-api.js: búsqueda asincrónica (TP9)
+├── css/, js/, img/       # js/app.js: búsqueda asincrónica (TP9)
 ├── clase5/               # TP5: carpeta de entrega con ese nombre exacto
 ├── .env.example
 └── .gitignore

@@ -8,8 +8,8 @@ La funcionalidad está integrada en [`clases.php`](../clases.php): un buscador e
 
 | Consigna | Archivo |
 |---|---|
-| Endpoint PHP que responde JSON | [`api/clases.php`](../api/clases.php) |
-| Consumo asincrónico y manejo de errores | [`js/clases-api.js`](../js/clases-api.js) |
+| Endpoint PHP que responde JSON | [`api/buscar_productos.php`](../api/buscar_productos.php) |
+| Consumo asincrónico y manejo de errores | [`js/app.js`](../js/app.js) |
 | Interfaz integrada al sitio | Sección `#buscador-clases` en [`clases.php`](../clases.php) |
 | Conexión y consultas preparadas | PDO con `config/env.php` y la tabla `clases` del [TP 6](../Trabajo%20Practico%206/schema.sql) |
 
@@ -17,9 +17,9 @@ La funcionalidad está integrada en [`clases.php`](../clases.php): un buscador e
 
 | Requisito | Estado | Dónde |
 |---|---|---|
-| Endpoint PHP independiente | ✅ | `api/clases.php` |
-| `Content-Type: application/json; charset=utf-8` | ✅ | `api/clases.php` |
-| Consulta a MySQL con PDO y consultas preparadas | ✅ | `api/clases.php`: `prepare()` + parámetros nombrados |
+| Endpoint PHP independiente | ✅ | `api/buscar_productos.php` |
+| `Content-Type: application/json; charset=utf-8` | ✅ | `api/buscar_productos.php` |
+| Consulta a MySQL con PDO y consultas preparadas | ✅ | `api/buscar_productos.php`: `prepare()` + parámetros nombrados |
 | Arreglo PHP convertido con `json_encode()` | ✅ | Respuesta `{status, total, query, categoria, data}` |
 | Códigos HTTP apropiados | ✅ | 200, 400, 405 y 500 según el caso |
 | Evento del usuario capturado con JavaScript | ✅ | Evento `input` en el buscador y `change` en la categoría |
@@ -30,7 +30,7 @@ La funcionalidad está integrada en [`clases.php`](../clases.php): un buscador e
 
 ## Endpoint
 
-`GET api/clases.php`
+`GET api/buscar_productos.php`
 
 | Parámetro | Tipo | Descripción |
 |---|---|---|
@@ -40,7 +40,7 @@ La funcionalidad está integrada en [`clases.php`](../clases.php): un buscador e
 Ejemplo:
 
 ```
-GET api/clases.php?q=yoga&categoria=Yoga
+GET api/buscar_productos.php?q=yoga&categoria=Yoga
 ```
 
 Respuesta `200 OK`:
@@ -82,17 +82,17 @@ La búsqueda usa `LIKE` con comodines y una sola consulta con `INNER JOIN` a `ca
 El HTML de la sección se agregó en `clases.php`:
 
 ```html
-<section id="buscador-clases" data-api-clases data-endpoint="api/clases.php">
+<section id="buscador-clases" data-api-clases data-endpoint="api/buscar_productos.php">
     ...
     <input type="search" id="api-busqueda">
     <select id="api-categoria">...</select>
     <p id="api-estado" role="status" aria-live="polite"></p>
     <div id="api-resultados" class="cards-grid row g-3" aria-live="polite"></div>
 </section>
-<script src="js/clases-api.js"></script>
+<script src="js/app.js"></script>
 ```
 
-`js/clases-api.js`:
+`js/app.js`:
 
 - Espera `DOMContentLoaded` y carga las clases al abrir la página.
 - Aplica un retraso de 300 ms al escribir para no lanzar una petición por cada tecla.
@@ -110,10 +110,10 @@ El HTML de la sección se agregó en `clases.php`:
 5. Abrir `http://localhost:8000/clases.php` y usar el buscador “Búsqueda en tiempo real” o la API directamente:
 
 ```bash
-curl "http://localhost:8000/api/clases.php"
-curl "http://localhost:8000/api/clases.php?q=yoga"
-curl "http://localhost:8000/api/clases.php?categoria=CrossFit"
-curl -i "http://localhost:8000/api/clases.php?q=zzzz"
+curl "http://localhost:8000/api/buscar_productos.php"
+curl "http://localhost:8000/api/buscar_productos.php?q=yoga"
+curl "http://localhost:8000/api/buscar_productos.php?categoria=CrossFit"
+curl -i "http://localhost:8000/api/buscar_productos.php?q=zzzz"
 ```
 
 ## Pruebas realizadas en local
@@ -135,10 +135,10 @@ curl -i "http://localhost:8000/api/clases.php?q=zzzz"
 Commit sugerido para esta entrega:
 
 ```bash
-git add api js/clases-api.js clases.php "Trabajo Practico 9" README.md
+git add api js/app.js clases.php "Trabajo Practico 9" README.md
 git commit -m "feat: implementa fetch api y endpoint json para TP9"
 ```
 
 ## Nota sobre nombres de archivos
 
-La consigna sugiere `api/buscar_productos.php` y `js/app.js`. En el proyecto (sitio de gimnasio) el endpoint es [`api/clases.php`](../api/clases.php) y el script del buscador es [`js/clases-api.js`](../js/clases-api.js). La funcionalidad es la misma: endpoint JSON con PDO preparado y consumo con `fetch()` + `async/await`.
+La consigna sugiere `api/buscar_productos.php` y `js/app.js`. En el proyecto (sitio de gimnasio) el endpoint es [`api/buscar_productos.php`](../api/buscar_productos.php) y el script del buscador es [`js/app.js`](../js/app.js). La funcionalidad es la misma: endpoint JSON con PDO preparado y consumo con `fetch()` + `async/await`.
