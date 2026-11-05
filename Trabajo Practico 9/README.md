@@ -138,3 +138,7 @@ Commit sugerido para esta entrega:
 git add api js/clases-api.js clases.php "Trabajo Practico 9" README.md
 git commit -m "feat: implementa fetch api y endpoint json para TP9"
 ```
+
+## Nota sobre nombres de archivos
+
+La consigna sugiere `api/buscar_productos.php` y `js/app.js`. En el proyecto (sitio de gimnasio) el endpoint es [`api/clases.php`](../api/clases.php) y el script del buscador es [`js/clases-api.js`](../js/clases-api.js). La funcionalidad es la misma: endpoint JSON con PDO preparado y consumo con `fetch()` + `async/await`.

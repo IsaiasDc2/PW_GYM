@@ -24,9 +24,9 @@ La entidad del CRUD es **`clases`**, definida en el [TP 6](../Trabajo%20Practico
 | Datos de conexión por variables de entorno | ✅ | `DB_*` en [`.env.example`](../.env.example) |
 | Integrado a las vistas del sitio | ✅ | Usa `includes/header.php` y `footer.php` |
 | Tabla del modelo del TP 6 | ✅ | `clases` con `categorias_clase`, `usuarios` y `sedes` |
-| Consultas preparadas con `:parametros` en todo | ✅ | `admin/*` e [`includes/clases_funciones.php`](../includes/clases_funciones.php) |
+| Consultas preparadas con `:parametros` en todo | ✅ | [`app/Models/Clase.php`](../app/Models/Clase.php) y [`app/Models/Catalogo.php`](../app/Models/Catalogo.php) |
 | `htmlspecialchars()` en todo lo impreso | ✅ | Función `e()` en [`includes/auth.php`](../includes/auth.php) |
-| Validación en servidor | ✅ | `includes/clases_funciones.php` |
+| Validación en servidor | ✅ | Método `validar()` en [`app/Controllers/ClaseController.php`](../app/Controllers/ClaseController.php) |
 
 Mejoras sobre la guía:
 - Eliminar se hace por **POST** con token CSRF, no por un enlace GET.
